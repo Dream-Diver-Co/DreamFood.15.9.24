@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Foody Restorant</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playball&display=swap" rel="stylesheet">
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/owl.carousel.min.css" rel="stylesheet">
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+
+        <!-- {{-- subscription stylesheet --}} -->
+        <link href="css/subscription.css" rel="stylesheet" >
+
+        <!-- {{-- text stylesheet --}} -->
+        <link href="css/text.css" rel="stylesheet">
+
+        <!-- {{-- text stylesheet --}} -->
+        <link href="css/modal.css" rel="stylesheet">
+
+
+    </head> 
+    <body>
+           
+   <!-- Navbar start -->
+   <div class="container-fluid nav-bar bg-white">
+    <div class="container">
+        <nav class="navbar navbar-light navbar-expand-lg ">
+            <a href="index.html" class="navbar-brand">
+                <h1 class="text-primary fw-bold mb-0">Foody<span class="text-dark">Restorant</span> </h1>
+            </a>
+            <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars text-primary"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav mx-auto">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="menu.html" class="nav-item nav-link">Menu</a>
+                    <a href="bonus.html" class="nav-item nav-link">Featured-Bonus</a>
+                    <a href="subscription.html" class="nav-item nav-link">Subscription</a>
+                    <a href="chef.html" class="nav-item nav-link">Chef-At-Home</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+                <button class="btn-search btn btn-primary btn-md-square me-4 rounded-circle d-none d-lg-inline-flex" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
+                <a href="booking.html" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill">Book Now</a>
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- Navbar End -->
+
+<!-- Hero Start -->
+<div class="container-fluid bg-light mt-0">
+    <div class="container text-center animated bounceInDown">
+        <h1 class="display-1">Subscription</h1>
+        <ol class="breadcrumb justify-content-center mb-0 animated bounceInDown">
+            <li class="breadcrumb-item"><a href="index">Home</a></li>
+            <li class="breadcrumb-item text-dark" aria-current="page">Subscription</li>
+        </ol>
+    </div>
+</div>
+<!-- Hero End -->
+
+<!-- Service Start -->
+<div class="container-fluid service">
+    <div class="container">
+        <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+            <h1 class="display-5 mb-5">We Have 3 Subscription systems</h1>
+        </div>
+        <div class="row g-4 display-block">
+            <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInRight" data-wow-delay="0.1s">
+                <div class="bg-white rounded service-item subscription">
+                    <div class="service-content d-flex align-items-center justify-content-center p-4">
+                        <div class="service-content-icon text-center">
+                            <div class="pricing pricing-theme">
+                                <div class="pricing-item">
+                                  <h3 class="pricing-title">Basic</h3>
+                                  <div class="pricing-price"><span class="pricing-currency">$</span>9.90</div>
+                                  <p class="pricing-sentence">Become Our Regular Client</p>
+                                  <ul class="pricing-feature-list">
+                                    <li class="pricing-feature">Order Anytime</li>
+                                    <li class="pricing-feature">Multiple Food Order</li>
+                                    <li class="pricing-feature">Food-Order for Occation</li>
+                                    <li class="pricing-feature">Birthday/Annivarsary Gift</li>
+                                    <li class="pricing-feature">1GB of storage space</li>
+                                    <li class="pricing-feature">Unlimited calls</li>
+                                  </ul>
+                                  <button onclick="showBasicModal()" class="pricing-action">Subscribe</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInDown" data-wow-delay="0.3s">
+                <div class="bg-white rounded service-item subscription">
+                    <div class="service-content d-flex align-items-center justify-content-center p-4">
+                        <div class="service-content-icon text-center">
+                            <div class="pricing pricing-theme">
+                            <div class="pricing-item">
+                                <h3 class="pricing-title">Standard</h3>
+                                <div class="pricing-price"><span class="pricing-currency">$</span>29.90</div>
+                                <p class="pricing-sentence">Become Our Standard Client</p>
+                                <ul class="pricing-feature-list">
+                                  <li class="pricing-feature">Order Anytime</li>
+                                  <li class="pricing-feature">Multiple Food Order</li>
+                                  <li class="pricing-feature">Food-Order for Occation</li>
+                                  <li class="pricing-feature">Birthday/Annivarsary Gift</li>
+                                  <li class="pricing-feature">1GB of storage space</li>
+                                  <li class="pricing-feature">Unlimited calls</li>
+                                </ul>
+                                <button onclick="showStandardModal()" class="pricing-action">Subscribe</button>
+                            </div>
+                        </div>
+
+   </div>                 </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.5s">
+                <div class="bg-white rounded service-item subscription">
+                    <div class="service-content d-flex align-items-center justify-content-center p-4">
+                        <div class="service-content-icon text-center">
+                            <div class="pricing pricing-theme">
+                            <div class="pricing-item">
+                                <h3 class="pricing-title">Premium</h3>
+                                <div class="pricing-price"><span class="pricing-currency">$</span>59.90</div>
+                                <p class="pricing-sentence">Gigantic business solution</p>
+                                <ul class="pricing-feature-list">
+                                    <li class="pricing-feature">Unlimited calls</li>
+                                    <li class="pricing-feature">Free hosting</li>
+                                    <li class="pricing-feature">Unlimited hours of support</li>
+                                    <li class="pricing-feature">Social media integration</li>
+                                    <li class="pricing-feature">Analytics integration</li>
+                                    <li class="pricing-feature">Unlimited storage space</li>
+                                </ul>
+                                <button onclick="showPremiumModal()" class="pricing-action">Subscribe</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInLeft" data-wow-delay="0.7s">
+                <div class="bg-white rounded service-item subscription">
+                    <div class="service-content d-flex align-items-center justify-content-center p-4">
+                        <div class="service-content-icon text-center">
+                            <div class="pricing pricing-theme">
+                                <div class="pricing-item">
+                                    <h3 class="pricing-title">Pro</h3>
+                                    <div class="pricing-price"><span class="pricing-currency">$</span>70.55</div>
+                                    <p class="pricing-sentence">Gigantic business solution</p>
+                                    <ul class="pricing-feature-list">
+                                        <li class="pricing-feature">Unlimited calls</li>
+                                        <li class="pricing-feature">Free hosting</li>
+                                        <li class="pricing-feature">Unlimited hours of support</li>
+                                        <li class="pricing-feature">Social media integration</li>
+                                        <li class="pricing-feature">Analytics integration</li>
+                                        <li class="pricing-feature">Unlimited storage space</li>
+                                    </ul>
+                                    <button onclick="showProModal()" class="pricing-action">Subscribe</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Service End -->
+
+<!-- modal start -->
+<div id="id01" class="modal">
+    <form class="modal-content animate" action="" method="post">
+        
+        <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <!-- <img src="img/foody.png" alt="logo" class="avatar"> -->
+            <h1 class="display-5">Subscription Form</h1>
+            <h3 class="text-head">Selected Plan: Basic</h3>
+            <h3 class="pricing-title-modal">Plan Price: $90.9</h3>
+        </div>
+
+        <div class="container">
+            <div class="row g-4 form">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <input type="name" class="form-control border-primary p-2" placeholder="Your Name">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input type="email" class="form-control border-primary p-2" placeholder="Enter Your Email">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input type="mobile" class="form-control border-primary p-2" placeholder="Your Contact No">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input type="date" class="form-control border-primary p-2" placeholder="Select Date">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input type="file" class="form-control border-primary p-2" placeholder="Your Contact No.">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input type="note" class="form-control border-primary p-2" placeholder="note">
+                </div>
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary px-5 py-3 rounded-pill">Submit Now</button>
+                </div>
+            </div>
+        </div>
+    </form>   
+</div>
+<div id="id02" class="modal">
+    <form class="modal-content animate" action="" method="post">
+        
+        <div class="imgcontainer">
+            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <!-- <img src="img/foody.png" alt="logo" class="avatar"> -->
+            <h1 class="display-5">Subscription Form</h1>
+            <h3 class="text-head">Selected Plan: Standard</h3>
+            <h3 class="pricing-title-modal">Plan Price: $29.90</h3>
+        </div>
+
+        <div class="container">
+            <div class="row g-4 form">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <input type="name" class="form-control border-primary p-2" placeholder="Your Name">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input type="email" class="form-control border-primary p-2" placeholder="Enter Your Email">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input type="mobile" class="form-control border-primary p-2" placeholder="Your Contact No">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input type="date" class="form-control border-primary p-2" placeholder="Select Date">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input type="file" class="form-control border-primary p-2" placeholder="Your Contact No.">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input type="note" class="form-control border-primary p-2" placeholder="note">
+                </div>
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary px-5 py-3 rounded-pill">Submit Now</button>
+                </div>
+            </div>
+        </div>
+    </form>   
+</div>
+<div id="id03" class="modal">
+    <form class="modal-content animate" action="" method="post">
+        
+        <div class="imgcontainer">
+            <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <!-- <img src="img/foody.png" alt="logo" class="avatar"> -->
+            <h1 class="display-5">Subscription Form</h1>
+            <h3 class="text-head">Selected Plan: Premium</h3>
+            <h3 class="pricing-title-modal">Plan Price: $59.90</h3>
+        </div>
+
+        <div class="container">
+            <div class="row g-4 form">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <input type="name" class="form-control border-primary p-2" placeholder="Your Name">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input type="email" class="form-control border-primary p-2" placeholder="Enter Your Email">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input type="mobile" class="form-control border-primary p-2" placeholder="Your Contact No">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input type="date" class="form-control border-primary p-2" placeholder="Select Date">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input type="file" class="form-control border-primary p-2" placeholder="Your Contact No.">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input type="note" class="form-control border-primary p-2" placeholder="note">
+                </div>
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary px-5 py-3 rounded-pill">Submit Now</button>
+                </div>
+            </div>
+        </div>
+    </form>   
+</div>
+<div id="id04" class="modal">
+    <form class="modal-content animate" action="" method="post">
+        
+        <div class="imgcontainer">
+            <span onclick="document.getElementById('id04').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <!-- <img src="img/foody.png" alt="logo" class="avatar"> -->
+            <h1 class="display-5">Subscription Form</h1>
+            <h3 class="text-head">Selected Plan: Pro</h3>
+            <h3 class="pricing-title-modal">Plan Price: $70.55</h3>
+        </div>
+
+        <div class="container">
+            <div class="row g-4 form">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <input type="name" class="form-control border-primary p-2" placeholder="Your Name">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input type="email" class="form-control border-primary p-2" placeholder="Enter Your Email">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input type="mobile" class="form-control border-primary p-2" placeholder="Your Contact No">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input type="date" class="form-control border-primary p-2" placeholder="Select Date">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input type="file" class="form-control border-primary p-2" placeholder="Your Contact No.">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input type="note" class="form-control border-primary p-2" placeholder="note">
+                </div>
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary px-5 py-3 rounded-pill">Submit Now</button>
+                </div>
+            </div>
+        </div>
+    </form>   
+</div>
+
+<!-- Footer Start -->
+<div class="container-fluid footer py-6 my-6 mb-0 bg-white wow bounceInUp" data-wow-delay="0.1s">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-item">
+                    <h1 class="text-primary">Foody<span class="text-dark">Restorant</span></h1>
+                    <p class="lh-lg mb-4">There cursus massa at urnaaculis estieSed aliquamellus vitae ultrs condmentum leo massamollis its estiegittis miristum.</p>
+                    <div class="footer-icon d-flex">
+                        <a class="btn btn-primary btn-sm-square me-2 rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-primary btn-sm-square me-2 rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="btn btn-primary btn-sm-square me-2 rounded-circle"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="btn btn-primary btn-sm-square rounded-circle"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-item">
+                    <h4 class="mb-4">Special Facilities</h4>
+                    <div class="d-flex flex-column align-items-start">
+                        <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Cheese Burger</a>
+                        <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Sandwich</a>
+                        <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Panner Burger</a>
+                        <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Special Sweets</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-item">
+                    <h4 class="mb-4">Contact Us</h4>
+                    <div class="d-flex flex-column align-items-start">
+                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i> 123 Street, New York, USA</p>
+                        <p><i class="fa-solid fa-utensils text-primary me-2"></i>dfg</p>
+                        <p><i class="fa fa-phone-alt text-primary me-2"></i> (+012) 3456 7890 123</p>
+                        <p><i class="fas fa-envelope text-primary me-2"></i> info@example.com</p>
+                        <p><i class="fa fa-clock text-primary me-2"></i> 26/7 Hours Service</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-item">
+                    <h4 class="mb-4">Social Gallery</h4>
+                    <div class="row g-2">
+                        <div class="col-4">
+                             <img src="img/menu-01.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                        </div>
+                        <div class="col-4">
+                             <img src="img/menu-02.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                        </div>
+                        <div class="col-4">
+                             <img src="img/menu-03.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                        </div>
+                        <div class="col-4">
+                             <img src="img/menu-04.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                        </div>
+                        <div class="col-4">
+                             <img src="img/menu-05.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                        </div>
+                        <div class="col-4">
+                             <img src="img/menu-06.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js "></script>
+    <script src="lib/easing/easing.min.js "></script>
+    <script src="lib/waypoints/waypoints.min.js "></script>
+    <script src="lib/counterup/counterup.min.js "></script>
+    <script src="lib/lightbox/js/lightbox.min.js "></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js "></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js "></script>
+
+        <!-- modal -->
+        <script>
+            $(document).ready(function () {
+                console.log('Document ready function fired');
+        
+                var basicModal = document.getElementById('id01');
+                var standardModal = document.getElementById('id02');
+                var premiumModal = document.getElementById('id03');
+                var proModal = document.getElementById('id04');
+        
+                $(window).click(function (event) {
+                    if (event.target == basicModal) {
+                        basicModal.style.display = "none";
+                    }
+                    if (event.target == standardModal) {
+                        standardModal.style.display = "none";
+                    }
+                    if (event.target == premiumModal) {
+                        premiumModal.style.display = "none";
+                    }
+                    if (event.target == proModal) {
+                        proModal.style.display = "none";
+                    }
+                });
+            });
+        
+            // Define functions to show different subscription modals
+            function showBasicModal() {
+                var basicModal = document.getElementById('id01');
+                basicModal.style.display = "block";
+            }
+        
+            function showStandardModal() {
+                var standardModal = document.getElementById('id02');
+                standardModal.style.display = "block";
+            }
+        
+            function showPremiumModal() {
+                var premiumModal = document.getElementById('id03');
+                premiumModal.style.display = "block";
+            }
+        
+            function showProModal() {
+                var proModal = document.getElementById('id04');
+                proModal.style.display = "block";
+            }
+        </script>
+        
+</body>
+
+</html>
+
