@@ -40,16 +40,19 @@
                 <div id="tab-6" class="tab-pane fade show p-0 active">
                     <div class="row g-4">
                         <div class="col-lg-6 wow bounceInUp" data-wow-delay="0.1s">
-                            <div class="menu-item d-flex align-items-center">
-                                <img class="flex-shrink-0 img-fluid rounded-circle" src="{{ asset('frontend/img/menu-01.jpg') }}" alt="">
-                                <div class="w-100 d-flex flex-column text-start ps-4">
-                                    <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
-                                        <h4>Paneer</h4>
-                                        <h4 class="text-primary">$90</h4>
+                            <a href="">
+                                <div class="menu-item d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded-circle" src="{{ asset('frontend/img/menu-01.jpg') }}" alt="">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                            <h4>Paneer</h4>
+                                            <h4 class="text-primary">$90</h4>
+                                        </div>
+                                        <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.</p>
+                                        <a href="" class="btn btn-primary px-4 py-2 rounded-pill menu-btn">More Food</a>
                                     </div>
-                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.</p>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="col-lg-6 wow bounceInUp" data-wow-delay="0.2s">
                             <div class="menu-item d-flex align-items-center">
