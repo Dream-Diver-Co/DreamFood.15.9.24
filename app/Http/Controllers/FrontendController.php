@@ -39,10 +39,10 @@ class FrontendController extends Controller
         return view('frontend.page.subcategory');
     }
 
-    // public function index()
-    // {
-    //     return view('frontend.index');
-    // }
+    public function product()
+    {
+        return view('frontend.page.product');
+    }
 
 
 
@@ -81,19 +81,19 @@ class FrontendController extends Controller
     //     return view('frontend.page.subcategory', compact('subcategories','cartItems'));
     // }
 
-    public function product()
-    {
+    // public function product()
+    // {
 
-        // Retrieve cart items for the authenticated user
-        $cartItems = Cart::where('user_id', auth()->id())->with('product')->get();
+    //     // Retrieve cart items for the authenticated user
+    //     $cartItems = Cart::where('user_id', auth()->id())->with('product')->get();
 
-        // Fetch products with "regular" status
-        $products = Product::where('status', 'regular')
-            ->with('subcategory', 'category')
-            ->get();
+    //     // Fetch products with "regular" status
+    //     $products = Product::where('status', 'regular')
+    //         ->with('subcategory', 'category')
+    //         ->get();
 
-        return view('frontend.page.product', compact('products','cartItems'));
-    }
+    //     return view('frontend.page.product', compact('products','cartItems'));
+    // }
 
     public function showSubcategories($categoryId)
     {
