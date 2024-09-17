@@ -48,8 +48,10 @@
                                             <h4>Paneer</h4>
                                             <h4 class="text-primary">$90</h4>
                                         </div>
-                                        <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.</p>
-                                        <a href="" class="btn btn-primary px-4 py-2 rounded-pill menu-btn">More Food</a>
+                                        <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.
+                                    <span class="subcategory-btn">more food</span>
+                                </p>
+
                                     </div>
                                 </div>
                             </a>
@@ -62,7 +64,9 @@
                                         <h4>Sweet Potato</h4>
                                         <h4 class="text-primary">$90</h4>
                                     </div>
-                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.</p>
+                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.
+                                    <span class="subcategory-btn">more food</span>
+                                </p>
                                 </div>
                             </div>
                         </div>
@@ -74,7 +78,9 @@
                                         <h4>Sabudana Tikki</h4>
                                         <h4 class="text-primary">$90</h4>
                                     </div>
-                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.</p>
+                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.
+                                    <span class="subcategory-btn">more food</span>
+                                </p>
                                 </div>
                             </div>
                         </div>
@@ -86,7 +92,9 @@
                                         <h4>Pizza</h4>
                                         <h4 class="text-primary">$90</h4>
                                     </div>
-                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.</p>
+                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.
+                                    <span class="subcategory-btn">more food</span>
+                                </p>
                                 </div>
                             </div>
                         </div>
@@ -98,7 +106,9 @@
                                         <h4>Bacon</h4>
                                         <h4 class="text-primary">$90</h4>
                                     </div>
-                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.</p>
+                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.
+                                    <span class="subcategory-btn">more food</span>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -110,7 +120,9 @@
                                         <h4>Chicken</h4>
                                         <h4 class="text-primary">$90</h4>
                                     </div>
-                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.</p>
+                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.
+                                    <span class="subcategory-btn">more food</span>
+                                </p>
                                 </div>
                             </div>
                         </div>
@@ -122,7 +134,9 @@
                                         <h4>Blooming</h4>
                                         <h4 class="text-primary">$90</h4>
                                     </div>
-                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.</p>
+                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.
+                                    <span class="subcategory-btn">more food</span>
+                                </p>
                                 </div>
                             </div>
                         </div>
@@ -134,7 +148,9 @@
                                         <h4>Sweet</h4>
                                         <h4 class="text-primary">$90</h4>
                                     </div>
-                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.</p>
+                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.
+                                    <span class="subcategory-btn">more food</span>
+                                </p>
                                 </div>
                             </div>
                         </div>
@@ -150,7 +166,9 @@
                                         <h4>Argentinian</h4>
                                         <h4 class="text-primary">$90</h4>
                                     </div>
-                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.</p>
+                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.
+                                    <span class="subcategory-btn">more food</span>
+                                </p>
                                 </div>
                             </div>
                         </div>
@@ -162,7 +180,9 @@
                                         <h4>Crispy</h4>
                                         <h4 class="text-primary">$90</h4>
                                     </div>
-                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.</p>
+                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.
+                                    <span class="subcategory-btn">more food</span>
+                                </p>
                                 </div>
                             </div>
                         </div>
@@ -174,7 +194,9 @@
                                         <h4>Sabudana Tikki</h4>
                                         <h4 class="text-primary">$90</h4>
                                     </div>
-                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.</p>
+                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.
+                                    <span class="subcategory-btn">more food</span>
+                                </p>
                                 </div>
                             </div>
                         </div>
@@ -186,7 +208,9 @@
                                         <h4>Blooming</h4>
                                         <h4 class="text-primary">$90</h4>
                                     </div>
-                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.</p>
+                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.
+                                    <span class="subcategory-btn">more food</span>
+                                </p>
                                 </div>
                             </div>
                         </div>
@@ -198,7 +222,9 @@
                                         <h4>Argentinian</h4>
                                         <h4 class="text-primary">$90</h4>
                                     </div>
-                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.</p>
+                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.
+                                    <span class="subcategory-btn">more food</span>
+                                </p>
                                 </div>
                             </div>
                         </div>
@@ -210,7 +236,9 @@
                                         <h4>Lemon</h4>
                                         <h4 class="text-primary">$90</h4>
                                     </div>
-                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.</p>
+                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.
+                                    <span class="subcategory-btn">more food</span>
+                                </p>
                                 </div>
                             </div>
                         </div>
@@ -222,7 +250,9 @@
                                         <h4>Water Drink</h4>
                                         <h4 class="text-primary">$90</h4>
                                     </div>
-                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.</p>
+                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.
+                                    <span class="subcategory-btn">more food</span>
+                                </p>
                                 </div>
                             </div>
                         </div>
@@ -234,7 +264,9 @@
                                         <h4>Salty lemon</h4>
                                         <h4 class="text-primary">$90</h4>
                                     </div>
-                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.</p>
+                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.
+                                    <span class="subcategory-btn">more food</span>
+                                </p>
                                 </div>
                             </div>
                         </div>
@@ -250,7 +282,9 @@
                                         <h4>Crispy water</h4>
                                         <h4 class="text-primary">$90</h4>
                                     </div>
-                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.</p>
+                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.
+                                    <span class="subcategory-btn">more food</span>
+                                </p>
                                 </div>
                             </div>
                         </div>
@@ -262,7 +296,9 @@
                                         <h4>Juice</h4>
                                         <h4 class="text-primary">$90</h4>
                                     </div>
-                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.</p>
+                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.
+                                    <span class="subcategory-btn">more food</span>
+                                </p>
                                 </div>
                             </div>
                         </div>
@@ -274,7 +310,9 @@
                                         <h4>Orange</h4>
                                         <h4 class="text-primary">$90</h4>
                                     </div>
-                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.</p>
+                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.
+                                    <span class="subcategory-btn">more food</span>
+                                </p>
                                 </div>
                             </div>
                         </div>
@@ -286,7 +324,9 @@
                                         <h4>Apple Juice</h4>
                                         <h4 class="text-primary">$90</h4>
                                     </div>
-                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.</p>
+                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.
+                                    <span class="subcategory-btn">more food</span>
+                                </p>
                                 </div>
                             </div>
                         </div>
@@ -298,7 +338,9 @@
                                         <h4>Banana</h4>
                                         <h4 class="text-primary">$90</h4>
                                     </div>
-                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.</p>
+                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.
+                                    <span class="subcategory-btn">more food</span>
+                                </p>
                                 </div>
                             </div>
                         </div>
@@ -310,7 +352,9 @@
                                         <h4>Sweet Water</h4>
                                         <h4 class="text-primary">$90</h4>
                                     </div>
-                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.</p>
+                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.
+                                    <span class="subcategory-btn">more food</span>
+                                </p>
                                 </div>
                             </div>
                         </div>
@@ -322,7 +366,9 @@
                                         <h4>Hot Coffee</h4>
                                         <h4 class="text-primary">$90</h4>
                                     </div>
-                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.</p>
+                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.
+                                    <span class="subcategory-btn">more food</span>
+                                </p>
                                 </div>
                             </div>
                         </div>
@@ -334,7 +380,9 @@
                                         <h4>Sweet Potato</h4>
                                         <h4 class="text-primary">$90</h4>
                                     </div>
-                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.</p>
+                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.
+                                    <span class="subcategory-btn">more food</span>
+                                </p>
                                 </div>
                             </div>
                         </div>
@@ -350,7 +398,9 @@
                                         <h4>Sabudana Tikki</h4>
                                         <h4 class="text-primary">$90</h4>
                                     </div>
-                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.</p>
+                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.
+                                    <span class="subcategory-btn">more food</span>
+                                </p>
                                 </div>
                             </div>
                         </div>
@@ -362,7 +412,9 @@
                                         <h4>Crispy</h4>
                                         <h4 class="text-primary">$90</h4>
                                     </div>
-                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.</p>
+                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.
+                                    <span class="subcategory-btn">more food</span>
+                                </p>
                                 </div>
                             </div>
                         </div>
@@ -374,7 +426,9 @@
                                         <h4>Pizza</h4>
                                         <h4 class="text-primary">$90</h4>
                                     </div>
-                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.</p>
+                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.
+                                    <span class="subcategory-btn">more food</span>
+                                </p>
                                 </div>
                             </div>
                         </div>
@@ -386,7 +440,9 @@
                                         <h4>Bacon</h4>
                                         <h4 class="text-primary">$90</h4>
                                     </div>
-                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.</p>
+                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.
+                                    <span class="subcategory-btn">more food</span>
+                                </p>
                                 </div>
                             </div>
                         </div>
@@ -398,7 +454,9 @@
                                         <h4>Chicken</h4>
                                         <h4 class="text-primary">$90</h4>
                                     </div>
-                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.</p>
+                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.
+                                    <span class="subcategory-btn">more food</span>
+                                </p>
                                 </div>
                             </div>
                         </div>
@@ -410,7 +468,9 @@
                                         <h4>Blooming</h4>
                                         <h4 class="text-primary">$90</h4>
                                     </div>
-                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.</p>
+                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.
+                                    <span class="subcategory-btn">more food</span>
+                                </p>
                                 </div>
                             </div>
                         </div>
@@ -422,7 +482,9 @@
                                         <h4>Sweet</h4>
                                         <h4 class="text-primary">$90</h4>
                                     </div>
-                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.</p>
+                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.
+                                    <span class="subcategory-btn">more food</span>
+                                </p>
                                 </div>
                             </div>
                         </div>
@@ -434,7 +496,9 @@
                                         <h4>Argentinian</h4>
                                         <h4 class="text-primary">$90</h4>
                                     </div>
-                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.</p>
+                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.
+                                    <span class="subcategory-btn">more food</span>
+                                </p>
                                 </div>
                             </div>
                         </div>
@@ -450,7 +514,9 @@
                                         <h4>Sabudana Tikki</h4>
                                         <h4 class="text-primary">$90</h4>
                                     </div>
-                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.</p>
+                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.
+                                    <span class="subcategory-btn">more food</span>
+                                </p>
                                 </div>
                             </div>
                         </div>
@@ -462,7 +528,9 @@
                                         <h4>Crispy</h4>
                                         <h4 class="text-primary">$90</h4>
                                     </div>
-                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.</p>
+                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.
+                                    <span class="subcategory-btn">more food</span>
+                                </p>
                                 </div>
                             </div>
                         </div>
@@ -474,7 +542,9 @@
                                         <h4>Pizza</h4>
                                         <h4 class="text-primary">$90</h4>
                                     </div>
-                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.</p>
+                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.
+                                    <span class="subcategory-btn">more food</span>
+                                </p>
                                 </div>
                             </div>
                         </div>
@@ -486,7 +556,9 @@
                                         <h4>Bacon</h4>
                                         <h4 class="text-primary">$90</h4>
                                     </div>
-                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.</p>
+                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.
+                                    <span class="subcategory-btn">more food</span>
+                                </p>
                                 </div>
                             </div>
                         </div>
@@ -498,7 +570,9 @@
                                         <h4>Chicken</h4>
                                         <h4 class="text-primary">$90</h4>
                                     </div>
-                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.</p>
+                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.
+                                    <span class="subcategory-btn">more food</span>
+                                </p>
                                 </div>
                             </div>
                         </div>
@@ -510,7 +584,9 @@
                                         <h4>Blooming</h4>
                                         <h4 class="text-primary">$90</h4>
                                     </div>
-                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.</p>
+                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.
+                                    <span class="subcategory-btn">more food</span>
+                                </p>
                                 </div>
                             </div>
                         </div>
@@ -522,7 +598,9 @@
                                         <h4>Sweet</h4>
                                         <h4 class="text-primary">$90</h4>
                                     </div>
-                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.</p>
+                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.
+                                    <span class="subcategory-btn">more food</span>
+                                </p>
                                 </div>
                             </div>
                         </div>
@@ -534,7 +612,9 @@
                                         <h4>Argentinian</h4>
                                         <h4 class="text-primary">$90</h4>
                                     </div>
-                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.</p>
+                                    <p class="mb-0">Consectetur adipiscing elit sed dwso eiusmod tempor incididunt ut labore.
+                                    <span class="subcategory-btn">more food</span>
+                                </p>
                                 </div>
                             </div>
                         </div>

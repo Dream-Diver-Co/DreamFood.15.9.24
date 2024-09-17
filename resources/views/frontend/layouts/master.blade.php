@@ -39,6 +39,7 @@
 
         <!-- Template Stylesheet -->
         <link href="{{ asset('frontend/css/style.css') }}" rel="stylesheet">
+        <link href="{{ asset('frontend/css/custom.css') }}" rel="stylesheet">
 
 
         <!-- {{-- subscription stylesheet --}} -->
