@@ -31,18 +31,36 @@ class FrontendController extends Controller
 
     public function shop()
     {
-        return view('frontend.page.shop');
+        $cartItems = Cart::where('user_id', auth()->id())->with('product')->get();
+        $categories = Category::withCount('subcategories')->get();
+        return view('frontend.page.shop', compact('categories','cartItems'));
     }
 
     public function subcategory()
     {
-        return view('frontend.page.subcategory');
+        $cartItems = Cart::where('user_id', auth()->id())->with('product')->get();
+        $subcategories = SubCategory::withCount('products')->get();
+
+        return view('frontend.page.subcategory', compact('subcategories','cartItems'));
     }
 
     public function product()
     {
-        return view('frontend.page.product');
+
+        // Retrieve cart items for the authenticated user
+        $cartItems = Cart::where('user_id', auth()->id())->with('product')->get();
+
+        // Fetch products with "regular" status
+        $products = Product::where('status', 'regular')
+            ->with('subcategory', 'category')
+            ->get();
+
+        return view('frontend.page.product', compact('products','cartItems'));
     }
+    // public function product()
+    // {
+    //     return view('frontend.page.product');
+    // }
 
 
 

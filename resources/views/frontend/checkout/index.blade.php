@@ -1,8 +1,18 @@
 @extends("frontend.layouts.master")
 
 @section("content")
-
-    <!-- Breadcrumb Start -->
+        <!-- Hero Start -->
+        <div class="container-fluid bg-light mt-0">
+            <div class="container text-center animated bounceInDown">
+                <h1 class="display-1 mb-4">Checkout</h1>
+                <ol class="breadcrumb justify-content-center mb-0 animated bounceInDown">
+                    <li class="breadcrumb-item"><a href="{{ route('index') }}">Home</a></li>
+                    <li class="breadcrumb-item text-dark" aria-current="page">Checkout</li>
+                </ol>
+            </div>
+        </div>
+        <!-- Hero End -->
+    {{-- <!-- Breadcrumb Start -->
     <div class="container-fluid">
         <div class="row px-xl-5">
             <div class="col-12">
@@ -14,16 +24,16 @@
             </div>
         </div>
     </div>
-    <!-- Breadcrumb End -->
+    <!-- Breadcrumb End --> --}}
 
     <div class="container-fluid">
         <form action="{{ route('checkout.process') }}" method="POST">
             @csrf
             <div class="row px-xl-5">
                 <!-- Billing Address Start -->
-                <div class="col-lg-8">
+                <div class="col-lg-8 p-3">
                     <h5 class="section-title position-relative text-uppercase mb-3"><span class="bg-secondary pr-3">Billing Address</span></h5>
-                    <div class="bg-light p-30 mb-5">
+                    <div class="bg-wheat p-4 mb-5">
                             <div class="row">
                                 <div class="col-md-6 form-group">
                                     <label>First Name</label>
@@ -51,7 +61,7 @@
                                 </div>
                                 <div class="col-md-6 form-group">
                                     <label>Country</label>
-                                    <select class="custom-select" name="country" required>
+                                    <select class="form-control custom-select" name="country" required>
                                         <option value="Netherland" selected>Netherland</option>
                                         <option value="Bangladesh">Bangladesh</option>
                                         <option value="Albania">Albania</option>
@@ -74,10 +84,10 @@
                     </div>
                 </div>
                 <!-- Order Summary Start -->
-                <div class="col-lg-4">
+                <div class="col-lg-4 p-3">
                     <h5 class="section-title position-relative text-uppercase mb-3"><span class="bg-secondary pr-3">Order Total</span></h5>
-                    <div class="bg-light p-30 mb-1">
-                        <div class="border-bottom pt-3 pb-2">
+                    <div class="bg-wheat p-4 mb-3">
+                        <div class="border-bottom bg-light p-30 pt-3 pb-2">
                             <div class="d-flex justify-content-between">
                                 <h6 class="font-weight-medium">Total Items</h6>
                                 <h6 class="font-weight-medium"><span id="overall-quantity">{{ $cartItems->sum('quantity') }}</span>ps</h6>
@@ -100,7 +110,7 @@
                     </div>
                     <div class="mb-5">
                         <h5 class="section-title position-relative text-uppercase mb-3"><span class="bg-secondary pr-3">Payment</span></h5>
-                        <div class="bg-light p-30">
+                        <div class="bg-wheat p-4">
                             <div class="form-group">
                                 <div class="custom-control custom-radio">
                                     <input type="radio" class="custom-control-input" id="cash_on_delivery" name="payment_method" value="cash_on_delivery" required>
@@ -138,18 +148,18 @@
                     <h5 class="section-title position-relative text-uppercase mb-3"><span class="bg-secondary pr-3">Your Order</span></h5>
                     <div class="table-responsive">
                         <table class="table table-bordered text-center align-middle bg-light">
-                            <thead class="thead-light">
+                            <thead class="thead-dark">
                                 <tr>
                                     <th>Image</th>
                                     <th>Name</th>
-                                    <th>Size</th>
-                                    <th>Color</th>
+                                    {{-- <th>Size</th>
+                                    <th>Color</th> --}}
                                     <th>Price</th>
                                     <th>Quantity</th>
                                     <th>Total</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody class="cart-body">
                                 @foreach($cartItems as $item)
                                     <tr>
                                     <td> @if($item->product && $item->product->image)
@@ -159,8 +169,8 @@
                                             @endif
                                         </td>
                                         <td>{{ $item->product->name }}</td>
-                                        <td>{{ $item->size }}</td>
-                                        <td>{{ $item->color }}</td>
+                                        {{-- <td>{{ $item->size }}</td>
+                                        <td>{{ $item->color }}</td> --}}
                                         <td>${{ $item->product->price }}</td>
                                         <td>{{ $item->quantity }}</td>
                                         <td>${{ $item->product->price * $item->quantity }}</td>

@@ -2,18 +2,17 @@
 
 @section("content")
 
-<!-- Breadcrumb Start -->
-<div class="container-fluid">
-    <div class="row px-xl-5">
-        <div class="col-12">
-            <nav class="breadcrumb bg-light mb-30">
-                <a class="breadcrumb-item text-dark" href="{{ route('index') }}">Home</a>
-                <span class="breadcrumb-item active">Shopping Cart</span>
-            </nav>
+        <!-- Hero Start -->
+        <div class="container-fluid bg-light mt-0">
+            <div class="container text-center animated bounceInDown">
+                <h1 class="display-1 mb-4">Shopping Cart</h1>
+                <ol class="breadcrumb justify-content-center mb-0 animated bounceInDown">
+                    <li class="breadcrumb-item"><a href="{{ route('index') }}">Home</a></li>
+                    <li class="breadcrumb-item text-dark" aria-current="page">Shopping Cart</li>
+                </ol>
+            </div>
         </div>
-    </div>
-</div>
-<!-- Breadcrumb End -->
+        <!-- Hero End -->
 
 <!-- Cart Start -->
 <div class="container">
@@ -26,15 +25,15 @@
                     <tr>
                         <th>Image</th>
                         <th>Name</th>
-                        <th>Size</th>
-                        <th>Color</th>
+                        {{-- <th>Size</th>
+                        <th>Color</th> --}}
                         <th>Price</th>
                         <th>Quantity</th>
                         <th>Total</th>
                         <th>Actions</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody class="cart-body">
                     @foreach($cartItems as $item)
                         <tr data-id="{{ $item->id }}">
                             <td class="align-middle">
@@ -51,8 +50,8 @@
                                     <em>Product Not Available</em>
                                 @endif
                             </td>
-                            <td class="align-middle">{{ $item->size ?? 'N/A' }}</td>
-                            <td class="align-middle">{{ $item->color ?? 'N/A' }}</td>
+                            {{-- <td class="align-middle">{{ $item->size ?? 'N/A' }}</td>
+                            <td class="align-middle">{{ $item->color ?? 'N/A' }}</td> --}}
                             <td class="align-middle text-success">
                                 @if($item->product)
                                     ${{ number_format($item->product->price, 2) }}
@@ -62,7 +61,7 @@
                             </td>
                             <td class="align-middle">
                                 <div class="input-group input-group-sm">
-                                    <input type="number" value="{{ $item->quantity }}" min="1" class="form-control text-center quantity-input" data-id="{{ $item->product_id }}">
+                                    <input type="number" value="{{ $item->quantity }}" min="1" class="form-control text-center quantity-input" data-id="{{ $item->product_id }}" style="width: 50px">
                                 </div>
                             </td>
                             <td class="align-middle product-total text-success">

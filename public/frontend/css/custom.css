@@ -3,3 +3,24 @@
     color: black;
     font-weight: bolder;
 }
+
+.thead-dark{
+    color: rgb(255, 255, 255);
+    background-color: rgb(59, 58, 58);
+}
+
+.cart-body{
+    color: black;
+ background-color: aliceblue;
+}
+
+/* .cart-body{
+   color: aliceblue;
+} */
+label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+.form-group {
+    margin-bottom: 1rem;
+}

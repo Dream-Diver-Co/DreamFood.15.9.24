@@ -75,7 +75,7 @@
 
                             <input type="hidden" name="product_id" value="{{ $product->id }}">
 
-                            <div class="d-flex mb-3">
+                            {{-- <div class="d-flex mb-3">
                                 <strong class="text-dark mr-3">Sizes:</strong>
                                 @if(!empty($product->sizes))
                                     @foreach($product->sizes as $index => $size)
@@ -101,7 +101,7 @@
                                 @else
                                     <p>No colors available</p>
                                 @endif
-                            </div>
+                            </div> --}}
 
                             <div class="d-flex align-items-center mb-4 pt-2">
                                 <div class="input-group quantity mr-3" style="width: 130px;">
@@ -110,7 +110,7 @@
                                             <i class="fa fa-minus"></i>
                                         </button>
                                     </div>
-                                    <input type="text" name="quantity" id="itemModalQuantity" class="form-control bg-secondary border-0 text-center" value="1">
+                                    <input type="text" name="quantity" id="itemModalQuantity" class="form-control border-0 text-center" value="1">
                                     <div class="input-group-btn">
                                         <button type="button" class="btn btn-primary btn-plus">
                                             <i class="fa fa-plus"></i>
