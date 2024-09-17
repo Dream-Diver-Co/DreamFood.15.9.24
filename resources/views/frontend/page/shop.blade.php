@@ -14,7 +14,7 @@
 </div>
 <!-- Hero End -->
 
-<div class="container-fluid bg-light py-6 my-6 mt-0">
+<div class="container-fluid bg-light my-6 mt-0">
     <div class="container">
         <div class="row g-5 align-items-center">
             <!-- <div class="text-center wow bounceInUp" data-wow-delay="0.1s">

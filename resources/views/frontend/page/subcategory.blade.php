@@ -23,31 +23,31 @@
             <ul class="nav nav-pills d-inline-flex justify-content-center mb-5 wow bounceInUp" data-wow-delay="0.1s">
                 <li class="nav-item p-2">
                     <i class="fa-solid fa-mug-saucer menu-icon me-2"></i>
-                    <a class="d-flex py-2 mx-2 border border-primary bg-white rounded-pill active" data-bs-toggle="pill" href="#tab-6">
+                    <a class="d-flex py-2 mx-2 border border-primary bg-wheat rounded-pill active" data-bs-toggle="pill" href="#tab-6">
                         <span class="text-dark" style="width: 150px;">Breakfast</span>
                     </a>
                 </li>
                 <li class="nav-item p-2">
                     <i class="fa-solid fa-plate-wheat menu-icon me-2"></i>
-                    <a class="d-flex py-2 mx-2 border border-primary bg-white rounded-pill" data-bs-toggle="pill" href="#tab-7">
+                    <a class="d-flex py-2 mx-2 border border-primary bg-wheat rounded-pill" data-bs-toggle="pill" href="#tab-7">
                         <span class="text-dark" style="width: 150px;">Lunch</span>
                     </a>
                 </li>
                 <li class="nav-item p-2">
                     <i class="fa-solid fa-utensils menu-icon me-2"></i>
-                    <a class="d-flex py-2 mx-2 border border-primary bg-white rounded-pill" data-bs-toggle="pill" href="#tab-8">
+                    <a class="d-flex py-2 mx-2 border border-primary bg-wheat rounded-pill" data-bs-toggle="pill" href="#tab-8">
                         <span class="text-dark" style="width: 150px;">Dinner</span>
                     </a>
                 </li>
                 <li class="nav-item p-2">
                     <i class="fa-solid fa-wine-glass-empty menu-icon me-2"></i>
-                    <a class="d-flex py-2 mx-2 border border-primary bg-white rounded-pill" data-bs-toggle="pill" href="#tab-9">
+                    <a class="d-flex py-2 mx-2 border border-primary bg-wheat rounded-pill" data-bs-toggle="pill" href="#tab-9">
                         <span class="text-dark" style="width: 150px;">Drinks</span>
                     </a>
                 </li>
                 <li class="nav-item p-2">
                     <i class="fa-solid fa-ice-cream menu-icon me-2"></i>
-                    <a class="d-flex py-2 mx-2 border border-primary bg-white rounded-pill" data-bs-toggle="pill" href="#tab-10">
+                    <a class="d-flex py-2 mx-2 border border-primary bg-wheat rounded-pill" data-bs-toggle="pill" href="#tab-10">
                         <span class="text-dark" style="width: 150px;">Dessert</span>
                     </a>
                 </li>

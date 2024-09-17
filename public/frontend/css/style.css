@@ -753,7 +753,7 @@ h4, h5, h6, .h4, .h5, .h6 {
     background: var(--bs-primary) !important;
 }
 .menu-item {
-    background-color: #f1f1f1;
+    background-color: #ffffff;
     padding: 14px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);

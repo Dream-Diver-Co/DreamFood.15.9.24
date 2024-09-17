@@ -8,7 +8,7 @@
 <!-- Hero Start -->
 <div class="container-fluid bg-light py-6 my-6 mt-0">
     <div class="container">
-    <div class="row g-5 align-items-center" style="height: 810px;">
+    <div class="row g-5 align-items-center" style="height: 700px;">
         <div class="col-lg-7 col-md-12">
             <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-4 animated zoomIn">Welcome to Foody Restorant</small>
             <h1 class="display-1 mb-4 animated zoomIn">Feel<span class="text-primary">The</span>Flavor</h1>
@@ -189,7 +189,7 @@
     </div>
     <div class="row g-4">
         <div class="col-lg-4 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.1s">
-            <div class="bg-light rounded choosing">
+            <div class="bg-wheat rounded choosing">
                 <div class="service-content d-flex align-items-center justify-content-center p-4">
                     <div class="service-content-icon text-center">
                         <img class="flex-shrink-0 img-fluid choosing-img" src="{{ asset('frontend/img/choosing1.webp') }}" alt="">
@@ -201,7 +201,7 @@
             </div>
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.3s">
-            <div class="bg-light rounded choosing">
+            <div class="bg-wheat rounded choosing">
                 <div class="service-content d-flex align-items-center justify-content-center p-4">
                     <div class="service-content-icon text-center">
                         <img class="flex-shrink-0 img-fluid choosing-img" src="{{ asset('frontend/img/choosing2.png') }}" alt="">
@@ -213,7 +213,7 @@
             </div>
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.5s">
-            <div class="bg-light rounded choosing">
+            <div class="bg-wheat rounded choosing">
                 <div class="service-content d-flex align-items-center justify-content-center p-4">
                     <div class="service-content-icon text-center">
                         <img class="flex-shrink-0 img-fluid choosing-img" src="{{ asset('frontend/img/choosing3.png') }}" alt="">
@@ -271,7 +271,7 @@
         </div>
         <div class="row g-4">
             <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.1s">
-                <div class="bg-white rounded service-item">
+                <div class="bg-wheat rounded service-item">
                     <div class="service-content d-flex align-items-center justify-content-center p-4">
                         <div class="service-content-icon text-center">
                             <i class="fas fa-cheese fa-7x text-primary mb-4"></i>
@@ -283,7 +283,7 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.3s">
-                <div class="bg-white rounded service-item">
+                <div class="bg-wheat rounded service-item">
                     <div class="service-content d-flex align-items-center justify-content-center p-4">
                         <div class="service-content-icon text-center">
                             <i class="fas fa-pizza-slice fa-7x text-primary mb-4"></i>
@@ -295,7 +295,7 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.5s">
-                <div class="bg-white rounded service-item">
+                <div class="bg-wheat rounded service-item">
                     <div class="service-content d-flex align-items-center justify-content-center p-4">
                         <div class="service-content-icon text-center">
                             <i class="fas fa-hotdog fa-7x text-primary mb-4"></i>
@@ -307,7 +307,7 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.7s">
-                <div class="bg-white rounded service-item">
+                <div class="bg-wheat rounded service-item">
                     <div class="service-content d-flex align-items-center justify-content-center p-4">
                         <div class="service-content-icon text-center">
                             <i class="fas fa-hamburger fa-7x text-primary mb-4"></i>
