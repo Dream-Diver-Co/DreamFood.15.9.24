@@ -28,6 +28,7 @@
                             <a href="{{ route('about') }}" class="dropdown-item">About</a>
                             <a href="{{ route('cart.show') }}" class="dropdown-item">Cart</a>
                             <a href="{{ route('checkout.index') }}" class="dropdown-item">Checkout</a>
+                            <a href="{{ route('booking') }}" class="dropdown-item">Booking</a>
                         </div>
                     </div>
 
@@ -92,7 +93,7 @@
                 </div>
 
                 <!-- Cart -->
-                <a href="{{ route('cart.show') }}" class="btn-search btn btn-primary btn-md-square me-4 rounded-circle d-none d-lg-inline-flex">
+                <a href="{{ route('cart.show') }}" class="btn btn-primary btn-md-square">
                     <i class="fa fa-shopping-cart mr-1"></i>
                     <span class="cart-count">20</span>
                 </a>
