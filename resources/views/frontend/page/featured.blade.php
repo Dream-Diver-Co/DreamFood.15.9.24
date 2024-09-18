@@ -2,20 +2,7 @@
 
 @section("content")
 
-
-    <!-- Hero Start -->
-    <div class="container-fluid bg-light mt-0">
-        <div class="container text-center animated bounceInDown">
-            <h1 class="display-1 mb-4">About</h1>
-            <ol class="breadcrumb justify-content-center mb-0 animated bounceInDown">
-                <li class="breadcrumb-item"><a href="{{ route('index') }}">Home</a></li>
-                <li class="breadcrumb-item text-dark" aria-current="page">About</li>
-            </ol>
-        </div>
-    </div>
-    <!-- Hero End -->
-
-    <div class="container-fluid bg-light py-6 my-6 mt-0">
+    <div class="container-fluid bg-light my-6 mt-0">
         <div class="container">
             <div class="row g-5 align-items-center bg-light hero-border">
                 <div class="col-lg-7 col-md-12">
@@ -64,7 +51,7 @@
             </div>
             <div class="row g-4">
                 <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.1s">
-                    <div class="bg-white rounded service-item">
+                    <div class="bg-wheat rounded service-item">
                         <div class="service-content d-flex align-items-center justify-content-center p-4">
                             <div class="service-content-icon text-center">
                                 <img src="{{ asset('frontend/img/menu2-1.png') }}" class="img-fluid rounded animated zoomIn" alt="">
@@ -76,7 +63,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.3s">
-                    <div class="bg-white rounded service-item">
+                    <div class="bg-wheat rounded service-item">
                         <div class="service-content d-flex align-items-center justify-content-center p-4">
                             <div class="service-content-icon text-center">
                                 <img src="{{ asset('frontend/img/menu2-2.png') }}" class="img-fluid rounded animated zoomIn" alt="">
@@ -88,7 +75,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.5s">
-                    <div class="bg-white rounded service-item">
+                    <div class="bg-wheat rounded service-item">
                         <div class="service-content d-flex align-items-center justify-content-center p-4">
                             <div class="service-content-icon text-center">
                                 <img src="{{ asset('frontend/img/menu2-3.png') }}" class="img-fluid rounded animated zoomIn" alt="">
@@ -100,7 +87,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.7s">
-                    <div class="bg-white rounded service-item">
+                    <div class="bg-wheat rounded service-item">
                         <div class="service-content d-flex align-items-center justify-content-center p-4">
                             <div class="service-content-icon text-center">
                                 <img src="{{ asset('frontend/img/menu1-1.png') }}" class="img-fluid rounded animated zoomIn" alt="">

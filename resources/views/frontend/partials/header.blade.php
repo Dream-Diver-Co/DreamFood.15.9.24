@@ -17,9 +17,9 @@
                     <a href="{{ route('index')}}" class="nav-item nav-link active">Home</a>
                     {{-- <a href="{{ route('about') }}" class="nav-item nav-link">About</a> --}}
                     <a href="{{ route('shop')}}" class="nav-item nav-link">Menu</a>
-                    <a href="bonus.html" class="nav-item nav-link">Featured-Bonus</a>
-                    <a href="subscription.html" class="nav-item nav-link">Subscription</a>
-                    <a href="chef.html" class="nav-item nav-link">Chef-At-Home</a>
+                    <a href="{{ route('featured')}}" class="nav-item nav-link">Featured-Bonus</a>
+                    <a href="{{ route('subscription')}}" class="nav-item nav-link">Subscription</a>
+                    <a href="{{ route('chef')}}" class="nav-item nav-link">Chef-At-Home</a>
 
                     <!-- Pages Dropdown -->
                     <div class="nav-item dropdown">

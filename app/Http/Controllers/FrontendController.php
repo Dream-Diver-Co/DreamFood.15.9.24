@@ -44,6 +44,11 @@ class FrontendController extends Controller
         return view('frontend.page.subscription');
     }
 
+    public function booking()
+    {
+        return view('frontend.page.booking');
+    }
+
     public function shop()
     {
         $cartItems = Cart::where('user_id', auth()->id())->with('product')->get();
