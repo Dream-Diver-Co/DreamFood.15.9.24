@@ -24,3 +24,8 @@ label {
 .form-group {
     margin-bottom: 1rem;
 }
+.cart-count{
+    margin-top: -20px;
+    font-size: 10px;
+    font-weight: bolder;
+}
