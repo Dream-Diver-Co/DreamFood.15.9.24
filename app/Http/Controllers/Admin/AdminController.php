@@ -13,6 +13,7 @@ use App\Models\User;
 use App\Models\Order;
 use App\Models\Product;
 use App\Models\Category;
+use App\Models\Subcategory;
 
 class AdminController extends Controller
 {
@@ -28,7 +29,7 @@ class AdminController extends Controller
 
         // Count the total number of delivered orders
         $totalDelivered = Order::where('status', 'Delivered')->count();
-
+        $totalShipped = Order::where('status', 'Shipped')->count();
         // Count new orders (assuming 'Pending' status means new)
         $newOrdersCount = Order::where('status', 'Pending')->count();
 
@@ -41,12 +42,17 @@ class AdminController extends Controller
         // Count the total number of categories
         $totalCategories = $categories->count();
 
+        // Get all subcategories along with the product count
+        $subcategories = Subcategory::withCount('products')->get();
+        // Count the total number of subcategories
+        $totalSubcategories = $subcategories->count();
+
 
         $orders = Order::with('user')->paginate(10);
 
         $totalUsers = User::count();
 
-        return view('admin.pages.dashboard.index',compact('orders','totalUsers','newOrdersCount','totalDelivered','products','totalProducts','categories', 'totalCategories'));
+        return view('admin.pages.dashboard.index',compact('orders','totalUsers','newOrdersCount','totalDelivered','totalShipped','products','totalProducts','categories', 'totalCategories','subcategories', 'totalSubcategories'));
     }
 
     public function logout(Request $request)
