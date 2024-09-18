@@ -12,6 +12,7 @@ use App\Http\Requests\Admin\UpdateAdminProfileRequest;
 use App\Models\User;
 use App\Models\Order;
 use App\Models\Product;
+use App\Models\Category;
 
 class AdminController extends Controller
 {
@@ -35,12 +36,17 @@ class AdminController extends Controller
         $products = Product::all(); // Fetch all products
         $totalProducts = $products->count(); // Count the total products
 
+        // Get all categories along with their subcategories count
+        $categories = Category::withCount('subcategories')->get();
+        // Count the total number of categories
+        $totalCategories = $categories->count();
+
 
         $orders = Order::with('user')->paginate(10);
 
         $totalUsers = User::count();
 
-        return view('admin.pages.dashboard.index',compact('orders','totalUsers','newOrdersCount','totalDelivered','products','totalProducts'));
+        return view('admin.pages.dashboard.index',compact('orders','totalUsers','newOrdersCount','totalDelivered','products','totalProducts','categories', 'totalCategories'));
     }
 
     public function logout(Request $request)

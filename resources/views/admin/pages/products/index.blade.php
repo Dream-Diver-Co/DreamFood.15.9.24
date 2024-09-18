@@ -46,11 +46,11 @@
                         <th>Image</th>
                         <th>Name</th>
                         <th>Price</th>
-                        <th>Sizes</th>
-                        <th>Colors</th>
+                        {{-- <th>Sizes</th>
+                        <th>Colors</th> --}}
                         <th>Title</th>
                         {{-- <th>Sub Title</th> --}}
-                        <th>Country Foods</th>
+                        <th>Country</th>
                         <th>Foods Items</th>
                         {{-- <th>Old Price</th> --}}
                         {{-- <th>Description</th>
@@ -70,8 +70,8 @@
                             </td>
                             <td>{{ $product->name }}</td>
                             <td>{{ $product->price }}</td>
-                            <td>{{ implode(', ', $product->sizes) }}</td>
-                            <td>{{ implode(', ', $product->colors) }}</td>
+                            {{-- <td>{{ implode(', ', $product->sizes) }}</td>
+                            <td>{{ implode(', ', $product->colors) }}</td> --}}
                             <td>{{ $product->title }}</td>
                             {{-- <td>{{ $product->sub_title }}</td> --}}
                             <td>{{ optional($product->category)->name }}</td>

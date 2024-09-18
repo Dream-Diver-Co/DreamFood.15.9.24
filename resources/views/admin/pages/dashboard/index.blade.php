@@ -104,8 +104,8 @@
                 <div class="d-flex">
                     <div class="flex-grow-1">
                         <p class="text-black font-size-15 mb-2"><b>Total Country</b></p>
-                        <h4 class="mb-2">{{ $totalDelivered }}</h4>
-                        <p class="text-muted mb-0"><span class="text-success fw-bold font-size-12 me-2"><i class="ri-arrow-right-up-line me-1 align-middle"></i>{{ $totalDelivered }}</span>from previous period</p>
+                        <h4 class="mb-2">{{ $totalCategories }}</h4>
+                        <p class="text-muted mb-0"><span class="text-success fw-bold font-size-12 me-2"><i class="ri-arrow-right-up-line me-1 align-middle"></i>{{ $totalCategories }}</span>from previous period</p>
                     </div>
                     <div class="avatar-sm">
                         <span class="avatar-title bg-light text-primary rounded-3">
