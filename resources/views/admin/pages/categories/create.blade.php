@@ -1,18 +1,18 @@
 @extends('admin.layouts.master')
 
-@section('title', 'Category')
+@section('title', 'Country Foods')
 @section('content')
 
 <!-- start page title -->
 <div class="row">
     <div class="col-12">
         <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-            <h4 class="mb-sm-0">Categories</h4>
+            <h4 class="mb-sm-0">Country Foods</h4>
 
             <div class="page-title-right">
                 <ol class="breadcrumb m-0">
                     <li class="breadcrumb-item"><a href="{{ route('admin.dashboard') }}">Dashboard</a></li>
-                    <li class="breadcrumb-item active">Categories</li>
+                    <li class="breadcrumb-item active">Country Foods</li>
                 </ol>
             </div>
 
@@ -37,7 +37,7 @@
 <!-- success message -->
 
 <div class="card">
-    <div class="card-header">Create New Categories</div>
+    <div class="card-header">Create New Country Foods</div>
     <div class="card-body">
         <form action="{{ route('categories.store') }}" method="POST" enctype="multipart/form-data">
             @csrf

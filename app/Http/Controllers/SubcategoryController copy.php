@@ -39,6 +39,9 @@ class SubcategoryController extends Controller
         return redirect()->back()->with('success', 'SubCategory created successfully!');
     }
 
+
+
+
     public function show(Subcategory $subcategory)
     {
         $subcategory->load('products');
@@ -77,29 +80,12 @@ class SubcategoryController extends Controller
         return redirect()->route('subcategories.index')->with('success', 'SubCategory Update successfully!');
     }
 
+
+
+
     public function destroy(Subcategory $subcategory)
     {
         $subcategory->delete();
         return redirect()->route('subcategories.index');
     }
-
-
-
-
-    public function updateStatus(Request $request, Subcategory $subcategory)
-    {
-        // Validate the status field
-        $request->validate([
-            'status' => 'required|string|in:breakfast,lunch,dinner,drinks,dessert',
-        ]);
-
-        // Update the subcategory's status
-        $subcategory->status = $request->status;
-        $subcategory->save();
-
-        return redirect()->route('subcategories.index')->with('success', 'Subcategory status updated successfully.');
-    }
-
-
-
 }

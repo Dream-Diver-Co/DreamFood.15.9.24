@@ -29,33 +29,33 @@
                 <li>
                     <a href="javascript: void(0);" class="has-arrow waves-effect">
                         <i class="fa-solid fa-list"></i>
-                        <span>category</span>
+                        <span>Country Foods</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="{{ route('categories.create')}}">Create category</a></li>
-                        <li><a href="{{ route('categories.index') }}">category List</a></li>
+                        <li><a href="{{ route('categories.create')}}">Create Country</a></li>
+                        <li><a href="{{ route('categories.index') }}">Country List</a></li>
                     </ul>
                 </li>
 
                 <li>
                     <a href="javascript: void(0);" class="has-arrow waves-effect">
                         <i class="fa-solid fa-table-columns"></i>
-                        <span>Subcategory</span>
+                        <span>Foods Items</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="{{ route('subcategories.create')}}">Create Subcategory</a></li>
-                        <li><a href="{{ route('subcategories.index') }}">Subcategory List</a></li>
+                        <li><a href="{{ route('subcategories.create')}}">Create Foods Items</a></li>
+                        <li><a href="{{ route('subcategories.index') }}">Foods Items List</a></li>
                     </ul>
                 </li>
 
                 <li>
                     <a href="javascript: void(0);" class="has-arrow waves-effect">
                         <i class="fa-brands fa-product-hunt"></i>
-                        <span>Product</span>
+                        <span>Foods</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="{{ route('products.create')}}">Create products</a></li>
-                        <li><a href="{{ route('products.index') }}">products List</a></li>
+                        <li><a href="{{ route('products.create')}}">Create Foods</a></li>
+                        <li><a href="{{ route('products.index') }}">Foods List</a></li>
                     </ul>
                 </li>
                 <li>

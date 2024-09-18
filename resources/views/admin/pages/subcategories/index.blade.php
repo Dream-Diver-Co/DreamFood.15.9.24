@@ -57,6 +57,7 @@
                                     <th>SubCategory Name</th>
                                     <th>Total Products</th>
                                     <th>Image</th>
+                                    <th>Status</th>
                                     <th>Description</th>
                                     <th>Actions</th>
                                 </tr>
@@ -70,6 +71,19 @@
                                     <td>
                                         <img style="height: 50px; width: 80px;" src="{{ asset('storage/' . $subcategory->image) }}" alt="{{ $subcategory->name }}">
                                     </td>
+                                    <td>
+                                        <form action="{{ route('subcategories.updateStatus', $subcategory) }}" method="POST" style="display: inline-block;">
+                                            @csrf
+                                            <select name="status" onchange="this.form.submit()" class="status form-control-sm">
+                                                <option value="breakfast" {{ (old('status', $subcategory->status) == 'breakfast') ? 'selected' : '' }}>Breakfast</option>
+                                                <option value="lunch" {{ (old('status', $subcategory->status) == 'lunch') ? 'selected' : '' }}>Lunch</option>
+                                                <option value="dinner" {{ (old('status', $subcategory->status) == 'dinner') ? 'selected' : '' }}>Dinner</option>
+                                                <option value="drinks" {{ (old('status', $subcategory->status) == 'drinks') ? 'selected' : '' }}>Drinks</option>
+                                                <option value="dessert" {{ (old('status', $subcategory->status) == 'dessert') ? 'selected' : '' }}>Dessert</option>
+                                            </select>
+                                        </form>
+                                    </td>
+
                                     <td>{{ $subcategory->description }}</td>
                                     <td>
                                         <a href="{{ route('subcategories.edit', $subcategory) }}" title="Edit" class="btn btn-primary btn-sm">Edit</a>

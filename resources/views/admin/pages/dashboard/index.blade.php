@@ -63,7 +63,7 @@
             <div class="card-body">
                 <div class="d-flex">
                     <div class="flex-grow-1">
-                        <p class="text-black font-size-15 mb-2"><b>Total Products</b></p>
+                        <p class="text-black font-size-15 mb-2"><b>Total Foods</b></p>
                         <h4 class="mb-2">{{ $totalProducts }}</h4>
                         <p class="text-muted mb-0"><span class="text-success fw-bold font-size-12 me-2"><i class="ri-arrow-right-up-line me-1 align-middle"></i>{{ $totalProducts }}</span>from previous period</p>
                     </div>
@@ -94,7 +94,84 @@
             </div><!-- end cardbody -->
         </div><!-- end card -->
     </div><!-- end col -->
-</div><!-- end row -->
+</div>
+<!-- end row -->
+
+<div class="row">
+    <div class="col-xl-3 col-md-6">
+        <div class="card bg-pink">
+            <div class="card-body">
+                <div class="d-flex">
+                    <div class="flex-grow-1">
+                        <p class="text-black font-size-15 mb-2"><b>Total Country</b></p>
+                        <h4 class="mb-2">{{ $totalDelivered }}</h4>
+                        <p class="text-muted mb-0"><span class="text-success fw-bold font-size-12 me-2"><i class="ri-arrow-right-up-line me-1 align-middle"></i>{{ $totalDelivered }}</span>from previous period</p>
+                    </div>
+                    <div class="avatar-sm">
+                        <span class="avatar-title bg-light text-primary rounded-3">
+                            <i class="ri-shopping-cart-2-line font-size-24"></i>
+                        </span>
+                    </div>
+                </div>
+            </div><!-- end cardbody -->
+        </div><!-- end card -->
+    </div><!-- end col -->
+    <div class="col-xl-3 col-md-6">
+        <div class="card bg-success">
+            <div class="card-body">
+                <div class="d-flex">
+                    <div class="flex-grow-1">
+                        <p class="text-black font-size-14 mb-2"><b>Total Shipped</b></p>
+                        <h4 class="mb-2">{{ $newOrdersCount }}</h4>
+                        <p class="text-muted mb-0"><span class="text-danger fw-bold font-size-12 me-2"><i class="ri-arrow-right-down-line me-1 align-middle"></i>{{ $newOrdersCount }}</span>from previous period</p>
+                    </div>
+                    <div class="avatar-sm">
+                        <span class="avatar-title bg-light text-success rounded-3">
+                            <i class="mdi mdi-currency-usd font-size-24"></i>
+                        </span>
+                    </div>
+                </div>
+            </div><!-- end cardbody -->
+        </div><!-- end card -->
+    </div><!-- end col -->
+    <div class="col-xl-3 col-md-6">
+        <div class="card bg-warning">
+            <div class="card-body">
+                <div class="d-flex">
+                    <div class="flex-grow-1">
+                        <p class="text-black font-size-15 mb-2"><b>Total Foods Items</b></p>
+                        <h4 class="mb-2">{{ $totalProducts }}</h4>
+                        <p class="text-muted mb-0"><span class="text-success fw-bold font-size-12 me-2"><i class="ri-arrow-right-up-line me-1 align-middle"></i>{{ $totalProducts }}</span>from previous period</p>
+                    </div>
+                    <div class="avatar-sm">
+                        <span class="avatar-title bg-light text-success rounded-3">
+                            <i class="mdi mdi-currency-btc font-size-24"></i>
+                        </span>
+                    </div>
+                </div>
+            </div><!-- end cardbody -->
+        </div><!-- end card -->
+    </div><!-- end col -->
+    <div class="col-xl-3 col-md-6">
+        <div class="card bg-primary">
+            <div class="card-body">
+                <div class="d-flex">
+                    <div class="flex-grow-1">
+                        <p class="text-black font-size-15 mb-2"><b>New Users</b></p>
+                        <h4 class="mb-2">{{ $totalUsers }}</h4>
+                        <p class="text-muted mb-0"><span class="text-success fw-bold font-size-12 me-2"><i class="ri-arrow-right-up-line me-1 align-middle"></i>{{ $totalUsers }}</span>from previous period</p>
+                    </div>
+                    <div class="avatar-sm">
+                        <span class="avatar-title bg-light text-primary rounded-3">
+                            <i class="ri-user-3-line font-size-24"></i>
+                        </span>
+                    </div>
+                </div>
+            </div><!-- end cardbody -->
+        </div><!-- end card -->
+    </div><!-- end col -->
+</div>
+<!-- end row -->
 
 <div class="row">
     <div class="col-xl-12">
