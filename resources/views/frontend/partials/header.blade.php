@@ -15,27 +15,29 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav mx-auto">
                     <a href="{{ route('index')}}" class="nav-item nav-link active">Home</a>
-                    <a href="{{ route('about') }}" class="nav-item nav-link">About</a>
+                    {{-- <a href="{{ route('about') }}" class="nav-item nav-link">About</a> --}}
                     <a href="{{ route('shop')}}" class="nav-item nav-link">Menu</a>
                     <a href="bonus.html" class="nav-item nav-link">Featured-Bonus</a>
                     <a href="subscription.html" class="nav-item nav-link">Subscription</a>
                     <a href="chef.html" class="nav-item nav-link">Chef-At-Home</a>
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
 
                     <!-- Pages Dropdown -->
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                         <div class="dropdown-menu m-0">
-                            <a href="page1.html" class="dropdown-item">Page 1</a>
-                            <a href="page2.html" class="dropdown-item">Page 2</a>
-                            <a href="page3.html" class="dropdown-item">Page 3</a>
+                            <a href="{{ route('about') }}" class="dropdown-item">About</a>
+                            <a href="{{ route('cart.show') }}" class="dropdown-item">Cart</a>
+                            <a href="{{ route('checkout.index') }}" class="dropdown-item">Checkout</a>
                         </div>
                     </div>
+
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+
                 </div>
 
                 <!-- My Account Dropdown -->
                 <div class="btn-group nav-item me-4">
-                    <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-bs-toggle="dropdown">
+                    <button type="button" class="btn btn-sm dropdown-toggle" data-bs-toggle="dropdown">
                         My Account
                     </button>
                     <div class="dropdown-menu dropdown-menu-right cart-dropdown-wrap cart-dropdown-hm2 account-dropdown">
