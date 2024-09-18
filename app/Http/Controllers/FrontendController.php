@@ -29,6 +29,21 @@ class FrontendController extends Controller
         return view('frontend.page.about');
     }
 
+    public function chef()
+    {
+        return view('frontend.page.chef');
+    }
+
+    public function featured()
+    {
+        return view('frontend.page.featured');
+    }
+
+    public function subscription()
+    {
+        return view('frontend.page.subscription');
+    }
+
     public function shop()
     {
         $cartItems = Cart::where('user_id', auth()->id())->with('product')->get();

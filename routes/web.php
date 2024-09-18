@@ -36,6 +36,9 @@ Route::get('/', [FrontendController::class, 'index'])->name('index');
 Route::get('/home2', [FrontendController::class, 'home2'])->name('home2');
 Route::get('/contact', [FrontendController::class, 'contact'])->name('contact');
 Route::get('/about', [FrontendController::class, 'about'])->name('about');
+Route::get('/featured', [FrontendController::class, 'featured'])->name('featured');
+Route::get('/chef', [FrontendController::class, 'chef'])->name('chef');
+Route::get('/subscription', [FrontendController::class, 'subscription'])->name('subscription');
 
 Route::get('/shop', [FrontendController::class, 'shop'])->name('shop');
 Route::get('/subcategories', [FrontendController::class, 'subcategory'])->name('subcategory');
