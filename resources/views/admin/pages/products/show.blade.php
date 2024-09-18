@@ -1,20 +1,20 @@
 
 @extends('admin.layouts.master')
 
-@section('title', 'Product Details')
+@section('title', 'Foods Details')
 @section('content')
 
 <!-- start page title -->
 <div class="row">
     <div class="col-12">
         <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-            <h4 class="mb-sm-0">Product Details</h4>
+            <h4 class="mb-sm-0">Foods Details</h4>
 
             <div class="page-title-right">
                 <ol class="breadcrumb m-0">
                     <li class="breadcrumb-item"><a href="{{ route('admin.dashboard') }}">{{ env('APP_NAME') }}</a></li>
-                    <li class="breadcrumb-item"><a href="{{ route('products.index') }}">Products</a></li>
-                    <li class="breadcrumb-item active">Product Details</li>
+                    <li class="breadcrumb-item"><a href="{{ route('products.index') }}">Foods</a></li>
+                    <li class="breadcrumb-item active">Foods Details</li>
                 </ol>
             </div>
         </div>
@@ -23,13 +23,13 @@
 <!-- end page title -->
 
 <div class="card">
-    <div class="card-header">Product Details</div>
+    <div class="card-header">Foods Details</div>
     <div class="card-body">
         <h1>{{ $product->name }}</h1>
         <p><strong>Title:</strong> {{ $product->title }}</p>
         <p><strong>Sub Title:</strong> {{ $product->sub_title }}</p>
-        <p><strong>Category:</strong> {{ $product->category->name }}</p>
-        <p><strong>Subcategory:</strong> {{ $product->subcategory->name }}</p>
+        <p><strong>Country Foods:</strong> {{ $product->category->name }}</p>
+        <p><strong>Foods Items:</strong> {{ $product->subcategory->name }}</p>
         <p><strong>Sizes:</strong> {{ implode(', ', $product->sizes) }}</p>
         <p><strong>Colors:</strong> {{ implode(', ', $product->colors) }}</p>
         <p><strong>Price:</strong> ${{ $product->price }}</p>

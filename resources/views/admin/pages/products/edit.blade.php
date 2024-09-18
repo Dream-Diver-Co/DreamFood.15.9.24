@@ -1,19 +1,19 @@
 
 @extends('admin.layouts.master')
 
-@section('title', 'Profile')
+@section('title', 'Food')
 @section('content')
 
 <!-- start page title -->
 <div class="row">
     <div class="col-12">
         <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-            <h4 class="mb-sm-0">Profile</h4>
+            <h4 class="mb-sm-0">Food</h4>
 
             <div class="page-title-right">
                 <ol class="breadcrumb m-0">
                     <li class="breadcrumb-item"><a href="{{ route('admin.dashboard') }}">{{ env('APP_NAME') }}</a></li>
-                    <li class="breadcrumb-item active">Profile</li>
+                    <li class="breadcrumb-item active">Food</li>
                 </ol>
             </div>
 
@@ -22,14 +22,14 @@
 </div>
 <!-- end page title -->
 <div class="card">
-    <div class="card-header">Product Edit</div>
+    <div class="card-header">Food Edit</div>
        <div class="card-body">
             <form action="{{ route('products.update', $product) }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 @method('PUT')
                 <div class="row">
                     <div class="col-lg-6 col-sm-12">
-                        <label for="category_id">Category Select <i class="fa-solid fa-caret-down"></i></label><br>
+                        <label for="category_id">Country Select <i class="fa-solid fa-caret-down"></i></label><br>
                         <select name="category_id" id="category_id"  class="form-control" required>
                             @foreach($categories as $category)
                                 <option value="{{ $category->id }}" {{ $product->category_id == $category->id ? 'selected' : '' }}>{{ $category->name }}</option>
@@ -64,7 +64,7 @@
                         <textarea  class="form-control" name="information" id="information">{{ $product->information }}</textarea><br>
                     </div>
                     <div class="col-lg-6 col-sm-12">
-                        <label for="subcategory_id">Subcategory Select <i class="fa-solid fa-caret-down"></i></label><br>
+                        <label for="subcategory_id">Foods Items Select <i class="fa-solid fa-caret-down"></i></label><br>
                         <select name="subcategory_id" id="subcategory_id"  class="form-control" required>
                             @foreach($subcategories as $subcategory)
                                 <option value="{{ $subcategory->id }}" {{ $product->subcategory_id == $subcategory->id ? 'selected' : '' }}>{{ $subcategory->name }}</option>

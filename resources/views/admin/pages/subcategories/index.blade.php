@@ -1,19 +1,19 @@
 
 @extends('admin.layouts.master')
 
-@section('title', 'Categories List')
+@section('title', 'Foods Items List')
 @section('content')
 
 <!-- start page title -->
 <div class="row">
     <div class="col-12">
         <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-            <h4 class="mb-sm-0">Categories List</h4>
+            <h4 class="mb-sm-0">Foods Items List</h4>
 
             <div class="page-title-right">
                 <ol class="breadcrumb m-0">
                     <li class="breadcrumb-item"><a href="{{ route('admin.dashboard') }}">Dashboard</a></li>
-                    <li class="breadcrumb-item active">Categories List</li>
+                    <li class="breadcrumb-item active">Foods Items List</li>
                 </ol>
             </div>
 
@@ -42,11 +42,11 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-header">
-                    <h2>SubCategories List</h2>
+                    <h2>Foods Items List</h2>
                 </div>
                 <div class="card-body">
                     <a href="{{ route('subcategories.create') }}" class="btn btn-success btn-sm" title="Add New Hero">
-                        Create SubCategory
+                        Create Foods Items
                     </a>
                     <br/><br/>
                     <div class="table-responsive">
@@ -54,8 +54,8 @@
                             <thead>
                                 <tr>
                                     <th>#</th>
-                                    <th>SubCategory Name</th>
-                                    <th>Total Products</th>
+                                    <th>Foods Items Name</th>
+                                    <th>Total Foods</th>
                                     <th>Image</th>
                                     <th>Status</th>
                                     <th>Description</th>

@@ -1,18 +1,18 @@
 
 @extends('admin.layouts.master')
 
-@section('title', 'Product')
+@section('title', 'Foods')
 @section('content')
 
 <div class="row">
     <div class="col-12">
         <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-            <h4 class="mb-sm-0">Product</h4>
+            <h4 class="mb-sm-0">Foods</h4>
 
             <div class="page-title-right">
                 <ol class="breadcrumb m-0">
                     <li class="breadcrumb-item"><a href="{{ route('admin.dashboard') }}">Dashboard</a></li>
-                    <li class="breadcrumb-item active">Product</li>
+                    <li class="breadcrumb-item active">Foods</li>
                 </ol>
             </div>
 
@@ -21,13 +21,13 @@
 </div>
 
 <div class="card">
-    <div class="card-header">Create Product</div>
+    <div class="card-header">Create Foods</div>
     <div class="card-body">
         <form action="{{ route('products.store') }}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="row">
                 <div class="col-lg-6 col-sm-12">
-                    <label for="category_id">Category Select <i class="fa-solid fa-caret-down"></i></label><br>
+                    <label for="category_id">Country Select <i class="fa-solid fa-caret-down"></i></label><br>
                     <select name="category_id" id="category_id" class="form-control" required>
                         @foreach($categories as $category)
                             <option value="{{ $category->id }}">{{ $category->name ?? 'Unnamed Category' }}</option>
@@ -42,13 +42,13 @@
                     <label for="price">Price</label><br>
                     <input type="number" name="price" id="price" step="0.01" class="form-control" required><br>
 
-                    <div class="form-group">
+                    {{-- <div class="form-group">
                         <label for="sizes">Sizes</label><br>
                         <div class="input-group" id="size-inputs">
                             <span><button type="button" id="add-size" class="btn btn-primary"><i class="fa-solid fa-square-plus"></i></button></span>
                             <input type="text" name="sizes[]" class="form-control">
                         </div><br>
-                    </div>
+                    </div> --}}
 
                     <label for="description">Description</label><br>
                     <textarea name="description" id="description" class="form-control"></textarea><br>
@@ -56,7 +56,7 @@
                     <textarea name="information" id="information" class="form-control"></textarea><br>
                 </div>
                 <div class="col-lg-6 col-sm-12">
-                    <label for="subcategory_id">Subcategory Select <i class="fa-solid fa-caret-down"></i></label><br>
+                    <label for="subcategory_id">Foods Items Select <i class="fa-solid fa-caret-down"></i></label><br>
                     <select name="subcategory_id" id="subcategory_id" class="form-control" required>
                         @foreach($subcategories as $subcategory)
                             <option value="{{ $subcategory->id }}">{{ $subcategory->name ?? 'Unnamed Subcategory' }}</option>
@@ -70,13 +70,13 @@
                     <input type="number" name="old_price" id="old_price" step="0.01" class="form-control"><br>
 
 
-                    <div class="form-group">
+                    {{-- <div class="form-group">
                         <label for="colors">Colors</label><br>
                         <div class="input-group" id="color-inputs">
                             <span><button type="button" id="add-color" class="btn btn-primary"><i class="fa-solid fa-square-plus"></i></button></span>
                             <input type="text" name="colors[]" class="form-control">
                         </div><br>
-                    </div>
+                    </div> --}}
                     <label for="sub_description">Sub Description</label><br>
                     <textarea name="sub_description" id="sub_description" class="form-control"></textarea><br>
                 </div>

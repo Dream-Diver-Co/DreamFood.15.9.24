@@ -54,7 +54,7 @@
                                 <tr>
                                     <th>#</th>
                                     <th>Country Foods Name</th>
-                                    <th>Total Subcategory</th>
+                                    <th>Total Foods Items</th>
                                     <th>Image</th>
                                     <th>Description</th>
                                     <th>Actions</th>
@@ -65,7 +65,7 @@
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
                                     <td>{{ $category->name }}</td>
-                                    <td>{{ $category->subcategories_count }} Subcategories</td>
+                                    <td>{{ $category->subcategories_count }} Foods Items</td>
                                     <td>
                                         <img style="height: 50px; width: 80px;" src="{{ asset('storage/' . $category->image) }}" alt="{{ $category->name }}">
                                     </td>

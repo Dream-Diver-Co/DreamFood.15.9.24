@@ -1,19 +1,19 @@
 
 @extends('admin.layouts.master')
 
-@section('title', 'SubCategory')
+@section('title', 'Foods Items')
 @section('content')
 
 <!-- start page title -->
 <div class="row">
     <div class="col-12">
         <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-            <h4 class="mb-sm-0">SubCategories</h4>
+            <h4 class="mb-sm-0">Foods Items</h4>
 
             <div class="page-title-right">
                 <ol class="breadcrumb m-0">
                     <li class="breadcrumb-item"><a href="{{ route('admin.dashboard') }}">Dashboard</a></li>
-                    <li class="breadcrumb-item active">SubCategories</li>
+                    <li class="breadcrumb-item active">Foods Items</li>
                 </ol>
             </div>
 
@@ -23,7 +23,7 @@
 <!-- end page title -->
 
 <div class="card">
-    <div class="card-header">Edit SubCategories</div>
+    <div class="card-header">Edit Foods Items</div>
     <div class="card-body">
         <form action="{{ route('subcategories.update', $subcategory) }}" method="POST" enctype="multipart/form-data">
             @csrf

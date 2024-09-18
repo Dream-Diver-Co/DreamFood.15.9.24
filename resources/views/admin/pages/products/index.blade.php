@@ -1,18 +1,18 @@
 
 @extends('admin.layouts.master')
 
-@section('title', 'Product')
+@section('title', 'Foods')
 @section('content')
 
 <div class="row">
     <div class="col-12">
         <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-            <h4 class="mb-sm-0">Product</h4>
+            <h4 class="mb-sm-0">Foods</h4>
 
             <div class="page-title-right">
                 <ol class="breadcrumb m-0">
                     <li class="breadcrumb-item"><a href="{{ route('admin.dashboard') }}">Dashboard</a></li>
-                    <li class="breadcrumb-item active">Product</li>
+                    <li class="breadcrumb-item active">Foods</li>
                 </ol>
             </div>
         </div>
@@ -32,11 +32,11 @@
 
 <div class="card">
     <div class="card-header">
-        <h2>Products List</h2>
+        <h2>Foods List</h2>
     </div>
     <div class="card-body">
         <a href="{{ route('products.create') }}" class="btn btn-success btn-sm mb-3" title="Add New Product">
-            Add New Product
+            Add New Foods
         </a>
         <div class="table-responsive">
             <table class="table table-striped table-bordered">
@@ -50,8 +50,8 @@
                         <th>Colors</th>
                         <th>Title</th>
                         {{-- <th>Sub Title</th> --}}
-                        <th>Category</th>
-                        <th>Subcategory</th>
+                        <th>Country Foods</th>
+                        <th>Foods Items</th>
                         {{-- <th>Old Price</th> --}}
                         {{-- <th>Description</th>
                         <th>Sub Description</th>
