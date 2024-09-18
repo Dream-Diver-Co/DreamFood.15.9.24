@@ -20,7 +20,7 @@
                     <div><div>200% Cashback</div></div>
                 </div>
             </div> <br>
-            <a href="booking.html" class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 me-4 animated zoomIn">Order Now</a>
+            <a href="{{ route('booking')}}" class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 me-4 animated zoomIn">Booking</a>
         </div>
         <div class="col-sm-12 col-lg-5  img-clip-block">
             <div class="row img-clip-row mt-3">

@@ -29,6 +29,11 @@ class FrontendController extends Controller
         return view('frontend.page.about');
     }
 
+    public function contact()
+    {
+        return view('frontend.page.contact');
+    }
+
     public function chef()
     {
         return view('frontend.page.chef');
@@ -92,14 +97,14 @@ class FrontendController extends Controller
     //     return view('frontend.page.about', compact('abouts','cartItems'));
     // }
 
-    public function contact()
-    {
-        // Retrieve cart items for the authenticated user
-        $cartItems = Cart::where('user_id', auth()->id())->with('product')->get();
+    // public function contact()
+    // {
+    //     // Retrieve cart items for the authenticated user
+    //     $cartItems = Cart::where('user_id', auth()->id())->with('product')->get();
 
-        $admincontacts = Admincontact::all();
-        return view('frontend.page.contact', compact('admincontacts','cartItems'));
-    }
+    //     $admincontacts = Admincontact::all();
+    //     return view('frontend.page.contact', compact('admincontacts','cartItems'));
+    // }
 
     // public function shop()
     // {
