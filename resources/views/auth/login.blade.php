@@ -24,9 +24,9 @@
                 <div class="col-lg-12 col-md-12 col-sm-12">
                     <div class="row">
                         <div class="col-lg-6 d-none d-lg-block">
-                            <img class="border-radius-15 img-fluid" src="{{ asset('frontend/img/Dream.png') }}" alt="logo" />
+                            <img class="border-radius-15 img-fluid rounded" src="{{ asset('frontend/img/logo1.jpg') }}" alt="logo" />
                         </div>
-                        <div class="col-lg-6 col-md-8 bg-white shadow-sm rounded p-4">
+                        <div class="col-lg-6 col-md-8 bg-wheat shadow-sm rounded p-4">
                             <div class="login-wrap">
                                 <h1 class="mb-4 text-center">Login</h1>
                                 <p class="text-center text-danger mb-4"><b>Don't have an account? </b><a href="{{ route('register') }}" class="text-success">Create here</a></p>

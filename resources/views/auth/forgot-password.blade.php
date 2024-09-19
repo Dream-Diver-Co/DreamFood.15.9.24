@@ -14,7 +14,7 @@
 <div class="page-content pt-150 pb-150">
     <div class="container">
         <div class="row">
-            <div class="col-xl-6 col-lg-8 col-md-12 m-auto">
+            <div class="col-xl-6 col-lg-8 col-md-12 m-auto bg-wheat">
                 <div class="row">
                     <div class="heading_s1">
                         <img class="border-radius-15" src="assets/imgs/page/reset_password.svg" alt="" />
@@ -23,7 +23,7 @@
                     </div>
                     <div class="col-lg-6 col-md-8">
                         <div class="login_wrap widget-taber-content background-white">
-                            <div class="padding_eight_all bg-white">
+                            <div class="padding_eight_all ">
                                 <form method="POST" action="{{ route('password.email') }}">
                                     @csrf
                                     <div class="form-group">

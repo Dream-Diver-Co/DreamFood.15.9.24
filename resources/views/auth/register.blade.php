@@ -22,7 +22,7 @@
             <div class="col-xl-12 col-lg-12 col-md-12 m-auto">
                 <div class="row">
                     <div class="col-lg-7 col-md-8">
-                        <div class="login_wrap widget-taber-content  bg-white p-4 rounded shadow-sm">
+                        <div class="login_wrap widget-taber-content  bg-wheat p-4 rounded shadow-sm">
                             <div class="heading_s1 text-center mb-4">
                                 <h1 class="mb-3">Create an Account</h1>
                                 <p class="mb-3">Already have an account? <a href="{{ route('login') }}" class="text-primary">Login</a></p>
@@ -73,15 +73,15 @@
                         </div>
                     </div>
                     <div class="col-lg-5 pr-30 d-none d-lg-block">
-                        <img class="border-radius-15 img-fluid mb-4" src="{{ asset('frontend/img/Dream.png') }}" alt="logo" />
-                        <div class="card-login mt-4">
-                            <a href="#" class="social-login facebook-login d-flex align-items-center mb-3 p-3 border rounded">
+                        <img class="border-radius-15 img-fluid rounded" src="{{ asset('frontend/img/logo1.jpg') }}" alt="logo" />
+                        <div class="card-login  mt-4">
+                            <a href="#" class="social-login facebook-login d-flex align-items-center  bg-wheat mb-3 p-3 border rounded">
                                 <img src="{{ asset('frontend/img/facebook.png') }}" style="width: 30px" alt="Facebook" class="mr-3" />
-                                <span>Continue with Facebook</span>
+                                <span class="m-2">Continue with Facebook</span>
                             </a>
-                            <a href="#" class="social-login google-login d-flex align-items-center p-3 border rounded">
+                            <a href="#" class="social-login google-login d-flex align-items-center bg-wheat p-3 border rounded">
                                 <img src="{{ asset('frontend/img/google.png') }}" style="height: 30px;" alt="Google" class="mr-3" />
-                                <span>Continue with Google</span>
+                                <span class="m-2">Continue with Google</span>
                             </a>
                         </div>
                     </div>
