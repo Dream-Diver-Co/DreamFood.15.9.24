@@ -45,14 +45,20 @@
                                     </a>
                                     <p class="mb-4">{{ $product->sub_title }}</p>
                                     <div class="row">
-                                        <div class=" col-md-6 col-sm-12 d-flex">
-                                            <h4 class="text-success" style="font-size: small;">Available</h4>
-                                        </div>
-                                        <div class=" col-md-6 col-sm-12 d-flex" >
-                                            <h4 class="text-danger" style="font-size: small;">Not Available</h4>
-                                        </div>
+                                        <div class="col-md-6 col-sm-12 d-flex">
+                                            @if($product->stock > 0)
+                                                <div class=" col-md-6 col-sm-12 d-flex">
+                                                    <h4 class="text-success" style="font-size: small;">Available</h4>
+                                                </div>
+                                            @else
+                                                <div class=" col-md-6 col-sm-12 d-flex" >
+                                                    <h4 class="text-danger" style="font-size: small;">Not Available</h4>
+                                                </div>
+                                            @endif
 
+                                        </div>
                                     </div>
+
                                     <div class="row">
                                         <div class=" col-md-6 col-sm-12 d-flex">
                                             <h4 class="text-success">${{ $product->price }}</h4>

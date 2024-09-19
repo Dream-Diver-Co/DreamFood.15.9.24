@@ -34,6 +34,7 @@ class ProductController extends Controller
             'price' => 'required|numeric',
             'subcategory_id' => 'required|exists:subcategories,id',
             'category_id' => 'required|exists:categories,id',
+
         ]);
 
         $product = new Product($request->all());
@@ -101,6 +102,7 @@ class ProductController extends Controller
     {
         $request->validate([
             'status' => 'required|string|in:Regular,Featured,Recent,Offer',
+
         ]);
 
         $product->status = $request->status;
@@ -108,6 +110,21 @@ class ProductController extends Controller
 
         return redirect()->route('products.index')->with('success', 'Product status updated successfully.');
     }
+
+    public function updateStatus_1(Request $request, Product $product)
+    {
+        $request->validate([
+            'status_1' => 'required|string|in:In Stock,Out of Stock',
+        ]);
+
+
+        $product->status_1 = $request->status_1;
+        $product->save();
+
+        return redirect()->route('products.index')->with('success', 'Product status updated successfully.');
+    }
+
+
 
 
 

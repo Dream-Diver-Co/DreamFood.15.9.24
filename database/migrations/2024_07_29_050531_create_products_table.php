@@ -29,6 +29,7 @@ class CreateProductsTable extends Migration
         // 31
         Schema::table('products', function (Blueprint $table) {
             $table->string('status')->default('Regular'); // Add 'status' column with default 'Regular'
+            $table->string('status_1')->default('In Stock');
         });
     }
 
@@ -39,6 +40,7 @@ class CreateProductsTable extends Migration
         // 31
         Schema::table('products', function (Blueprint $table) {
             $table->dropColumn('status');
+            $table->dropColumn('status_1');
         });
 
     }

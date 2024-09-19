@@ -114,6 +114,7 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
         Route::post('/subcategories/{subcategory}/status', [SubcategoryController::class, 'updateStatus'])->name('subcategories.updateStatus');
         Route::resource('products', ProductController::class);
         Route::post('/products/{product}/status', [ProductController::class, 'updateStatus'])->name('products.updateStatus');
+        Route::post('/products/{product}/status_1', [ProductController::class, 'updateStatus_1'])->name('products.updateStatus_1');
 
 
 

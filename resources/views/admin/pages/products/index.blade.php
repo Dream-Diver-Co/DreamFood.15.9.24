@@ -57,6 +57,7 @@
                         <th>Sub Description</th>
                         <th>Information</th> --}}
                         <th>Status</th>
+                        <th>Status-1</th>
                         <th>Actions</th>
 
                     </tr>
@@ -88,6 +89,15 @@
                                         <option value="Featured" {{ $product->status == 'Featured' ? 'selected' : '' }}>Featured</option>
                                         <option value="Recent" {{ $product->status == 'Recent' ? 'selected' : '' }}>Recent</option>
                                         <option value="Offer" {{ $product->status == 'Offer' ? 'selected' : '' }}>Offer</option>
+                                    </select>
+                                </form>
+                            </td>
+                            <td>
+                                <form action="{{ route('products.updateStatus_1', $product) }}" method="POST" style="display: inline-block;">
+                                    @csrf
+                                    <select name="status_1" onchange="this.form.submit()" class="status-1 form-control-sm">
+                                        <option value="In Stock" {{ $product->status_1 == 'In Stock' ? 'selected' : '' }}>In Stock</option>
+                                        <option value="Out of Stock" {{ $product->status_1 == 'Out of Stock' ? 'selected' : '' }}>Out of Stock</option>
                                     </select>
                                 </form>
                             </td>
