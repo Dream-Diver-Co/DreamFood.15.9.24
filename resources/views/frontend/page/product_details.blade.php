@@ -54,7 +54,7 @@
                 </div>
 
                 <div class="col-lg-7 rounded bg-wheat p-3 h-auto mb-30">
-                    <div class="h-100 bg-light p-30">
+                    <div class="product-content h-100 bg-light p-30">
                         <h3>{{ $product->name }}</h3>
                         <div class="d-flex mb-3">
                             <div class="text-primary mr-2">
@@ -66,11 +66,24 @@
                             </div>
                             <small class="pt-1">(99 Reviews)</small>
                         </div>
-                        <h3 class="font-weight-semi-bold mb-4">${{ $product->price }}</h3>
-                        <p class="mb-4">{{ $product->sub_title }}</p>
-                        <p class="text-dark mr-2"> <b>Country Foods:</b> {{ optional($product->category)->name }}</p>
-                        <p class="text-dark mr-2"> <b>Foods Items:</b> {{ optional($product->subcategory)->name }}</p>
 
+                        <div class = "product-price">
+                        <h3 class = "text-danger">Old Price: $<del>{{ $product->old_price }}</del></h3>
+                        <h3 class = "text-success">New Price: <span>${{ $product->price }}</span></h3>
+                        </div>
+
+                        <div class = "product-detail">
+                        <h2>about this item: </h2>
+                        <p class="mb-4">{{ $product->sub_title }}</p>
+
+                        <ul>
+                            <li><b>Country Foods:</b> <span>{{ optional($product->category)->name }}</span></li>
+                            <li><b>Foods Items:</b> <span>{{ optional($product->subcategory)->name }}</span></li>
+                            <li>Available: <span>in stock</span></li>
+                            <li>Shipping Area: <span>All over the world</span></li>
+                            <li>Shipping Fee: <span>Free</span></li>
+                        </ul>
+                        </div>
 
 
                         <form action="{{ route('cart.add') }}" method="POST">
