@@ -29,32 +29,44 @@ class FrontendController extends Controller
 
     public function about()
     {
-        return view('frontend.page.about');
+        // Retrieve cart items for the authenticated user
+        $cartItems = Cart::where('user_id', auth()->id())->with('product')->get();
+        return view('frontend.page.about',compact('cartItems'));
     }
 
     public function contact()
     {
-        return view('frontend.page.contact');
+        // Retrieve cart items for the authenticated user
+        $cartItems = Cart::where('user_id', auth()->id())->with('product')->get();
+        return view('frontend.page.contact',compact('cartItems'));
     }
 
     public function chef()
     {
-        return view('frontend.page.chef');
+        // Retrieve cart items for the authenticated user
+        $cartItems = Cart::where('user_id', auth()->id())->with('product')->get();
+        return view('frontend.page.chef',compact('cartItems'));
     }
 
     public function featured()
     {
-        return view('frontend.page.featured');
+        // Retrieve cart items for the authenticated user
+        $cartItems = Cart::where('user_id', auth()->id())->with('product')->get();
+        return view('frontend.page.featured',compact('cartItems'));
     }
 
     public function subscription()
     {
-        return view('frontend.page.subscription');
+        // Retrieve cart items for the authenticated user
+        $cartItems = Cart::where('user_id', auth()->id())->with('product')->get();
+        return view('frontend.page.subscription',compact('cartItems'));
     }
 
     public function booking()
     {
-        return view('frontend.page.booking');
+        // Retrieve cart items for the authenticated user
+        $cartItems = Cart::where('user_id', auth()->id())->with('product')->get();
+        return view('frontend.page.booking',compact('cartItems'));
     }
 
     public function shop()
