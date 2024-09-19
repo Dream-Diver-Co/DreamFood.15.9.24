@@ -7,7 +7,15 @@
             </a>
             <a href="{{ route('cart.show')}}" class="navbar-toggler py-2 px-3">
                 <i class="fa fa-shopping-cart mr-1"></i>
-                    <span class="">20</span>
+                    <span class="">
+                        <span id="overall-quantity">
+                            @isset($cartItems)
+                                {{ $cartItems->sum('quantity') }}
+                            @else
+                                0
+                            @endisset
+                        </span>
+                    </span>
             </a>
             <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="fa fa-bars text-primary"></span>
@@ -93,9 +101,17 @@
                 </div>
 
                 <!-- Cart -->
-                <a href="{{ route('cart.show') }}" class="btn btn-primary btn-md-square">
+                <a href="{{ route('cart.show') }}" class="btn btn-primary btn-md-square mobile-view">
                     <i class="fa fa-shopping-cart mr-1"></i>
-                    <span class="cart-count">20</span>
+                    <span class="cart-count">
+                        <span id="overall-quantity">
+                            @isset($cartItems)
+                                {{ $cartItems->sum('quantity') }}
+                            @else
+                                0
+                            @endisset
+                        </span>
+                    </span>
                 </a>
             </div>
         </nav>

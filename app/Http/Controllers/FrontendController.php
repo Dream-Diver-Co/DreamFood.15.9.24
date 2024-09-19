@@ -21,7 +21,10 @@ class FrontendController extends Controller
 {
     public function index()
     {
-        return view('frontend.index');
+        $cartItems = Cart::where('user_id', auth()->id())->with('product')->get();
+        $categories = Category::withCount('subcategories')->get();
+
+        return view('frontend.index', compact('categories','cartItems'));
     }
 
     public function about()

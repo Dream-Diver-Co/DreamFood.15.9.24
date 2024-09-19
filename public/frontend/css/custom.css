@@ -29,3 +29,27 @@ label {
     font-size: 10px;
     font-weight: bolder;
 }
+
+
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .home-menu-img {
+    animation: rotate 50s linear infinite;
+  }
+
+
+
+
+
+ @media only screen and (max-width: 767px) {
+    .mobile-view{
+        display: none;
+     }
+ }

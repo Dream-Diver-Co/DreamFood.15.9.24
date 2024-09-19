@@ -10,7 +10,7 @@
         <meta content="" name="description">
 
         <!-- Favicon -->
-        <link rel="shortcut icon" href="{{ asset('/admin/assets/images/Dream.png') }}">
+        <link rel="shortcut icon" href="{{ asset('/admin/assets/images/logo1.jpg') }}">
 
         <!-- Google Web Fonts -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
