@@ -15,8 +15,8 @@ class CreateProductsTable extends Migration
             $table->string('name');
             $table->string('title')->nullable();
             $table->string('sub_title')->nullable();
-            $table->json('sizes')->nullable(); // Store sizes as JSON
-            $table->json('colors')->nullable(); // Store colors as JSON
+            // $table->json('sizes')->nullable(); // Store sizes as JSON
+            // $table->json('colors')->nullable(); // Store colors as JSON
             $table->string('image')->nullable();
             $table->decimal('price', 8, 2)->nullable();
             $table->decimal('old_price', 8, 2)->nullable();

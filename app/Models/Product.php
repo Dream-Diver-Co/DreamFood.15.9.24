@@ -9,16 +9,21 @@ class Product extends Model
 {
     use HasFactory;
 
+    // protected $fillable = [
+    //     'subcategory_id', 'category_id', 'name', 'title', 'sub_title',
+    //     'sizes', 'colors', 'image', 'price', 'old_price',
+    //     'sub_description', 'description', 'information', 'status'
+    // ];
     protected $fillable = [
         'subcategory_id', 'category_id', 'name', 'title', 'sub_title',
-        'sizes', 'colors', 'image', 'price', 'old_price',
+        'image', 'price', 'old_price',
         'sub_description', 'description', 'information', 'status'
     ];
 
-    protected $casts = [
-        'sizes' => 'array',
-        'colors' => 'array',
-    ];
+    // protected $casts = [
+    //     'sizes' => 'array',
+    //     'colors' => 'array',
+    // ];
 
     public function category()
     {

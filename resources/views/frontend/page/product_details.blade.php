@@ -104,13 +104,13 @@
                             </div> --}}
 
                             <div class="d-flex align-items-center mb-4 pt-2">
-                                <div class="input-group quantity mr-3" style="width: 130px;">
+                                <div class="input-group quantity mr-3" style="width: 115px; margin-right: 5px;">
                                     <div class="input-group-btn">
                                         <button type="button" class="btn btn-primary btn-minus">
                                             <i class="fa fa-minus"></i>
                                         </button>
                                     </div>
-                                    <input type="text" name="quantity" id="itemModalQuantity" class="form-control border-0 text-center" value="1">
+                                    <input type="text" name="quantity" id="itemModalQuantity" class="form-control border-0 text-center" value="1" min="1">
                                     <div class="input-group-btn">
                                         <button type="button" class="btn btn-primary btn-plus">
                                             <i class="fa fa-plus"></i>
@@ -220,5 +220,29 @@
         </div>
         <!-- Shop Detail End -->
 
+<!-- Include jQuery for easier DOM manipulation (Optional, can be pure JS) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        // Increment quantity
+        $('.btn-plus').click(function() {
+            let quantityInput = $(this).closest('.input-group').find('input[name="quantity"]');
+            let currentValue = parseInt(quantityInput.val());
+            if (!isNaN(currentValue)) {
+                quantityInput.val(currentValue + 1);
+            }
+        });
+
+        // Decrement quantity
+        $('.btn-minus').click(function() {
+            let quantityInput = $(this).closest('.input-group').find('input[name="quantity"]');
+            let currentValue = parseInt(quantityInput.val());
+            if (!isNaN(currentValue) && currentValue > 1) {  // Prevent going below 1
+                quantityInput.val(currentValue - 1);
+            }
+        });
+    });
+</script>
 
 @endsection

@@ -29,8 +29,8 @@ class ProductController extends Controller
             'name' => 'required|string|max:255',
             'title' => 'required|string|max:255',
             'sub_title' => 'required|string|max:255',
-            'sizes' => 'required|array|min:1|max:6',
-            'colors' => 'required|array|min:1|max:6',
+            // 'sizes' => 'required|array|min:1|max:6',
+            // 'colors' => 'required|array|min:1|max:6',
             'price' => 'required|numeric',
             'subcategory_id' => 'required|exists:subcategories,id',
             'category_id' => 'required|exists:categories,id',
@@ -43,8 +43,8 @@ class ProductController extends Controller
             $product->image = $path;
         }
 
-        $product->sizes = $request->sizes;
-        $product->colors = $request->colors;
+        // $product->sizes = $request->sizes;
+        // $product->colors = $request->colors;
 
         $product->save();
 
@@ -64,8 +64,8 @@ class ProductController extends Controller
             'name' => 'required|string|max:255',
             'title' => 'required|string|max:255',
             'sub_title' => 'required|string|max:255',
-            'sizes' => 'required|array|min:1|max:6',
-            'colors' => 'required|array|min:1|max:6',
+            // 'sizes' => 'required|array|min:1|max:6',
+            // 'colors' => 'required|array|min:1|max:6',
             'price' => 'required|numeric',
             'subcategory_id' => 'required|exists:subcategories,id',
             'category_id' => 'required|exists:categories,id',
@@ -78,8 +78,8 @@ class ProductController extends Controller
             $product->image = $path;
         }
 
-        $product->sizes = $request->sizes;
-        $product->colors = $request->colors;
+        // $product->sizes = $request->sizes;
+        // $product->colors = $request->colors;
 
         $product->save();
 

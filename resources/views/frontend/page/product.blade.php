@@ -36,7 +36,7 @@
                 <div class="row g-4">
                     @foreach($products as $product)
                     <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.1s">
-                        <div class="bg-white rounded menu-2">
+                        <div class="bg-wheat rounded menu-2">
                             <div class="service-content d-flex align-items-center justify-content-center p-4">
                                 <div class="service-content-icon text-center">
                                     <img src="{{ asset('storage/'. $product->image) }}" class="img-fluid rounded animated zoomIn" alt="">
@@ -44,10 +44,10 @@
                                     <p class="mb-4">{{ $product->sub_title }}</p>
                                     <div class="row">
                                         <div class=" col-md-6 col-sm-12 d-flex">
-                                            <h4 class="text-primary">${{ $product->price }}</h4>
+                                            <h4 class="text-success">${{ $product->price }}</h4>
                                         </div>
                                         <div class=" col-md-6 col-sm-12 d-flex" >
-                                            <h4 class="text-primary"><del>${{ $product->old_price }}</del></h4>
+                                            <h4 class="text-danger"><del>${{ $product->old_price }}</del></h4>
                                         </div>
                                         <form action="{{ route('cart.add') }}" method="POST">
                                             @csrf
@@ -60,7 +60,7 @@
                                                             <i class="fa fa-minus"></i>
                                                         </button>
                                                     </div>
-                                                    <input type="text" name="quantity" id="itemModalQuantity" class="form-control border-0 text-center" value="1">
+                                                    <input type="text" name="quantity" id="itemModalQuantity" class="form-control border-0 text-center bg-white" value="1" min="1">
                                                     <div class="input-group-btn">
                                                         <button type="button" class="btn btn-primary btn-plus">
                                                             <i class="fa fa-plus"></i>
@@ -82,195 +82,13 @@
                         </div>
                     </div>
                     @endforeach
-                    {{-- <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.3s">
-                        <div class="bg-white rounded menu-2">
-                            <div class="service-content d-flex align-items-center justify-content-center p-4">
-                                <div class="service-content-icon text-center">
-                                    <img src="{{ asset('frontend/img/menu2-2.png')}}" class="img-fluid rounded animated zoomIn" alt="">
-                                    <h4 class="mb-3">Tomato Cucumber</h4>
-                                    <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
-                                    <div class="row">
-                                        <div class=" col-md-6 col-sm-12 d-flex">
-                                            <h4 class="text-primary">$19</h4>
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                        </div>
-                                        <div class=" col-md-6 col-sm-12 d-flex" style="text-align: right;">
-                                            <a href="detail2.html">
-                                                <i class="fa-solid fa-eye" style="font-size: x-large; margin-left: 75px;"></i>
-                                            </a>
-                                        </div>
-                                            <a href="#" class="btn btn-primary rounded-pill">Add To Card
-                                                <i class="fa-solid fa-cart-plus"></i>
-                                            </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.5s">
-                        <div class="bg-white rounded menu-2">
-                            <div class="service-content d-flex align-items-center justify-content-center p-4">
-                                <div class="service-content-icon text-center">
-                                    <img src="{{ asset('frontend/img/menu2-3.png')}}" class="img-fluid rounded animated zoomIn" alt="">
-                                    <h4 class="mb-3">Chicken Galantine</h4>
-                                    <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
-                                    <div class="row">
-                                        <div class=" col-md-6 col-sm-12 d-flex">
-                                            <h4 class="text-primary">$19</h4>
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                        </div>
-                                        <div class=" col-md-6 col-sm-12 d-flex" style="text-align: right;">
-                                            <a href="detail1.html">
-                                                <i class="fa-solid fa-eye" style="font-size: x-large; margin-left: 75px;"></i>
-                                            </a>
-                                        </div>
-                                            <a href="#" class="btn btn-primary rounded-pill">Add To Card
-                                                <i class="fa-solid fa-cart-plus"></i>
-                                            </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.7s">
-                        <div class="bg-white rounded menu-2">
-                            <div class="service-content d-flex align-items-center justify-content-center p-4">
-                                <div class="service-content-icon text-center">
-                                    <img src="{{ asset('frontend/img/menu2-4.png')}}" class="img-fluid rounded animated zoomIn" alt="">
-                                    <h4 class="mb-3">Healthy Oatmeal</h4>
-                                    <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
-                                    <div class="row">
-                                        <div class=" col-md-6 col-sm-12 d-flex">
-                                            <h4 class="text-primary">$19</h4>
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                        </div>
-                                        <div class=" col-md-6 col-sm-12 d-flex" style="text-align: right;">
-                                            <a href="detail2.html">
-                                                <i class="fa-solid fa-eye" style="font-size: x-large; margin-left: 75px;"></i>
-                                            </a>
-                                        </div>
-                                            <a href="#" class="btn btn-primary rounded-pill">Add To Card
-                                                <i class="fa-solid fa-cart-plus"></i>
-                                            </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.1s">
-                        <div class="bg-white rounded menu-2">
-                            <div class="service-content d-flex align-items-center justify-content-center p-4">
-                                <div class="service-content-icon text-center">
-                                    <img src="{{ asset('frontend/img/menu2-5.png')}}" class="img-fluid rounded animated zoomIn" alt="">
-                                    <h4 class="mb-3">Barley Porridge</h4>
-                                    <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
-                                                                            <div class="row">
-                                        <div class=" col-md-6 col-sm-12 d-flex">
-                                            <h4 class="text-primary">$19</h4>
-                                        </div>
-                                        <div class=" col-md-6 col-sm-12 d-flex">
-
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.3s">
-                        <div class="bg-white rounded menu-2">
-                            <div class="service-content d-flex align-items-center justify-content-center p-4">
-                                <div class="service-content-icon text-center">
-                                    <img src="{{ asset('frontend/img/menu2-6.png')}}" class="img-fluid rounded animated zoomIn" alt="">
-                                    <h4 class="mb-3">Sald Salmon</h4>
-                                    <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
-                                                                            <div class="row">
-                                        <div class=" col-md-6 col-sm-12 d-flex">
-                                            <h4 class="text-primary">$19</h4>
-                                        </div>
-                                        <div class=" col-md-6 col-sm-12 d-flex">
-
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.5s">
-                        <div class="bg-white rounded menu-2">
-                            <div class="service-content d-flex align-items-center justify-content-center p-4">
-                                <div class="service-content-icon text-center">
-                                    <img src="{{ asset('frontend/img/menu2-7.png')}}" class="img-fluid rounded animated zoomIn" alt="">
-                                    <h4 class="mb-3">Avocado Tuna</h4>
-                                    <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
-                                                                            <div class="row">
-                                        <div class=" col-md-6 col-sm-12 d-flex">
-                                            <h4 class="text-primary">$19</h4>
-                                        </div>
-                                        <div class=" col-md-6 col-sm-12 d-flex">
-
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.7s">
-                        <div class="bg-white rounded menu-2">
-                            <div class="service-content d-flex align-items-center justify-content-center p-4">
-                                <div class="service-content-icon text-center">
-                                    <img src="{{ asset('frontend/img/menu2-8.png')}}" class="img-fluid rounded animated zoomIn" alt="">
-                                    <h4 class="mb-3">Shrimps Tomato</h4>
-                                    <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
-                                        <div class="row">
-                                        <div class=" col-md-6 col-sm-12 d-flex">
-                                            <h4 class="text-primary">$19</h4>
-                                        </div>
-                                        <div class=" col-md-6 col-sm-12 d-flex">
-
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                            <i class="fas fa-star text-primary"></i>
-                                        </div>
-                                        </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> --}}
                 </div>
             </div>
         </div>
     </div>
 </div>
 <!-- Products End -->
+
 
 <script>
     document.addEventListener('DOMContentLoaded', function () {
@@ -280,6 +98,30 @@
                 successMessage.style.display = 'none';
             }, 5000);
         }
+    });
+</script>
+ <!-- Include jQuery for easier DOM manipulation (Optional, can be pure JS) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        // Increment quantity
+        $('.btn-plus').click(function() {
+            let quantityInput = $(this).closest('.input-group').find('input[name="quantity"]');
+            let currentValue = parseInt(quantityInput.val());
+            if (!isNaN(currentValue)) {
+                quantityInput.val(currentValue + 1);
+            }
+        });
+
+        // Decrement quantity
+        $('.btn-minus').click(function() {
+            let quantityInput = $(this).closest('.input-group').find('input[name="quantity"]');
+            let currentValue = parseInt(quantityInput.val());
+            if (!isNaN(currentValue) && currentValue > 1) {  // Prevent going below 1
+                quantityInput.val(currentValue - 1);
+            }
+        });
     });
 </script>
 

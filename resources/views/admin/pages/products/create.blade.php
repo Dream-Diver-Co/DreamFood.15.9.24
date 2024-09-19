@@ -42,13 +42,13 @@
                     <label for="price">Price</label><br>
                     <input type="number" name="price" id="price" step="0.01" class="form-control" required><br>
 
-                    <div class="form-group">
+                    {{-- <div class="form-group">
                         <label for="sizes">Sizes</label><br>
                         <div class="input-group" id="size-inputs">
                             <span><button type="button" id="add-size" class="btn btn-primary"><i class="fa-solid fa-square-plus"></i></button></span>
                             <input type="text" name="sizes[]" class="form-control">
                         </div><br>
-                    </div>
+                    </div> --}}
 
                     <label for="description">Description</label><br>
                     <textarea name="description" id="description" class="form-control"></textarea><br>
@@ -70,13 +70,13 @@
                     <input type="number" name="old_price" id="old_price" step="0.01" class="form-control"><br>
 
 
-                    <div class="form-group">
+                    {{-- <div class="form-group">
                         <label for="colors">Colors</label><br>
                         <div class="input-group" id="color-inputs">
                             <span><button type="button" id="add-color" class="btn btn-primary"><i class="fa-solid fa-square-plus"></i></button></span>
                             <input type="text" name="colors[]" class="form-control">
                         </div><br>
-                    </div>
+                    </div> --}}
                     <label for="sub_description">Sub Description</label><br>
                     <textarea name="sub_description" id="sub_description" class="form-control"></textarea><br>
                 </div>

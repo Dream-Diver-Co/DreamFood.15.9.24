@@ -45,7 +45,7 @@
 
                         <label for="price">Price</label><br>
                         <input class="form-control" type="number" name="price" id="price" step="0.01" value="{{ $product->price }}" required><br>
-                        <div class="form-group">
+                        {{-- <div class="form-group">
                             <label for="sizes">Sizes</label><br>
                             <div class="input-group" id="size-inputs">
                                 @foreach($product->sizes as $size)
@@ -57,7 +57,7 @@
                                     </button>
                                 </span>
                             </div><br>
-                        </div>
+                        </div> --}}
                         <label for="description">Description</label><br>
                         <textarea  class="form-control" name="description" id="description">{{ $product->description }}</textarea><br>
                         <label for="information">Information</label><br>
@@ -76,7 +76,7 @@
                         <input class="form-control" type="text" name="sub_title" id="sub_title" value="{{ $product->sub_title }}"><br>
                         <label for="old_price">Old Price</label><br>
                         <input class="form-control" type="number" name="old_price" id="old_price" step="0.01" value="{{ $product->old_price }}"><br>
-                        <div class="form-group">
+                        {{-- <div class="form-group">
                             <label for="colors">Colors</label><br>
                             <div class="input-group" id="color-inputs">
                                 @foreach($product->colors as $color)
@@ -88,7 +88,7 @@
                                     </button>
                                 </span>
                             </div><br>
-                        </div>
+                        </div> --}}
                         <label for="sub_description">Sub Description</label><br>
                         <textarea  class="form-control" name="sub_description" id="sub_description">{{ $product->sub_description }}</textarea><br>
                         <label for="image">Save Image</label>

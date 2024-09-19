@@ -30,8 +30,8 @@
         <p><strong>Sub Title:</strong> {{ $product->sub_title }}</p>
         <p><strong>Country Foods:</strong> {{ $product->category->name }}</p>
         <p><strong>Foods Items:</strong> {{ $product->subcategory->name }}</p>
-        <p><strong>Sizes:</strong> {{ implode(', ', $product->sizes) }}</p>
-        <p><strong>Colors:</strong> {{ implode(', ', $product->colors) }}</p>
+        {{-- <p><strong>Sizes:</strong> {{ implode(', ', $product->sizes) }}</p>
+        <p><strong>Colors:</strong> {{ implode(', ', $product->colors) }}</p> --}}
         <p><strong>Price:</strong> ${{ $product->price }}</p>
         <p><strong>Old Price:</strong> ${{ $product->old_price }}</p>
         <p><strong>Sub Description:</strong> {{ $product->sub_description }}</p>
