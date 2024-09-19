@@ -47,9 +47,31 @@ label {
 
 
 
+/* Responsive */
 
- @media only screen and (max-width: 767px) {
+ @media screen and (max-width: 767px) {
+
+    /* CSS rules for mobile devices */
     .mobile-view{
         display: none;
      }
- }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    /* CSS rules for tablets */
+    .mobile-view{
+        display: none;
+     }
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+  /* CSS rules for desktops */
+}
+
+@media screen and (min-width: 1200px) {
+  /* CSS rules for large desktops */
+}
