@@ -40,8 +40,19 @@
                             <div class="service-content d-flex align-items-center justify-content-center p-4">
                                 <div class="service-content-icon text-center">
                                     <img src="{{ asset('storage/'. $product->image) }}" class="img-fluid rounded animated zoomIn" alt="">
-                                    <h4 class="mb-3">{{ $product->name }}</h4>
+                                    <a href="{{ route('product_details', ['id' => $product->id]) }}">
+                                        <h4 class="mb-3">{{ $product->name }}</h4>
+                                    </a>
                                     <p class="mb-4">{{ $product->sub_title }}</p>
+                                    <div class="row">
+                                        <div class=" col-md-6 col-sm-12 d-flex">
+                                            <h4 class="text-success" style="font-size: small;">Available</h4>
+                                        </div>
+                                        <div class=" col-md-6 col-sm-12 d-flex" >
+                                            <h4 class="text-danger" style="font-size: small;">Not Available</h4>
+                                        </div>
+
+                                    </div>
                                     <div class="row">
                                         <div class=" col-md-6 col-sm-12 d-flex">
                                             <h4 class="text-success">${{ $product->price }}</h4>
