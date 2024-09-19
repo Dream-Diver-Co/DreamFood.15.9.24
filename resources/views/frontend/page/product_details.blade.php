@@ -68,6 +68,9 @@
                         </div>
                         <h3 class="font-weight-semi-bold mb-4">${{ $product->price }}</h3>
                         <p class="mb-4">{{ $product->sub_title }}</p>
+                        <p class="text-dark mr-2"> <b>Country Foods:</b> {{ optional($product->category)->name }}</p>
+                        <p class="text-dark mr-2"> <b>Foods Items:</b> {{ optional($product->subcategory)->name }}</p>
+
 
 
                         <form action="{{ route('cart.add') }}" method="POST">
