@@ -25,9 +25,9 @@
         <!-- Shop Detail Start  -->
         <div class="container-fluid pb-5">
             <div class="row px-xl-5">
-                <div class="col-lg-5 mb-30">
+                <div class="col-lg-5 rounded bg-wheat p-3 mb-30">
                     <div id="product-carousel" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner bg-light">
+                        <div class="carousel-inner">
                             <div class="carousel-item active">
                                 {{-- <img class="w-100 h-100" src="img/product-1.jpg" alt="Image"> --}}
                                 @if($product->image)
@@ -53,7 +53,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-7 h-auto mb-30">
+                <div class="col-lg-7 rounded bg-wheat p-3 h-auto mb-30">
                     <div class="h-100 bg-light p-30">
                         <h3>{{ $product->name }}</h3>
                         <div class="d-flex mb-3">
@@ -110,7 +110,7 @@
                                             <i class="fa fa-minus"></i>
                                         </button>
                                     </div>
-                                    <input type="text" name="quantity" id="itemModalQuantity" class="form-control border-0 text-center" value="1" min="1">
+                                    <input type="text" name="quantity" id="itemModalQuantity" class="form-control bg-white border-0 text-center" value="1" min="1">
                                     <div class="input-group-btn">
                                         <button type="button" class="btn btn-primary btn-plus">
                                             <i class="fa fa-plus"></i>
@@ -145,23 +145,31 @@
                 </div>
             </div>
             <div class="row px-xl-5">
-                <div class="col">
+                <div class="col rounded bg-wheat p-3">
                     <div class="bg-light p-30">
-                        <div class="nav nav-tabs mb-4">
-                            <a class="nav-item nav-link text-dark active" data-toggle="tab" href="#tab-pane-1">Description</a>
-                            <a class="nav-item nav-link text-dark" data-toggle="tab" href="#tab-pane-2">Information</a>
-                            <a class="nav-item nav-link text-dark" data-toggle="tab" href="#tab-pane-3">Reviews (0)</a>
+                        <!-- Nav tabs -->
+                        <div class="nav nav-tabs rounded bg-white mb-4" role="tablist">
+                            <a class="nav-item nav-link text-dark active" data-toggle="tab" href="#tab-pane-1" role="tab">Description</a>
+                            <a class="nav-item nav-link text-dark" data-toggle="tab" href="#tab-pane-2" role="tab">Information</a>
+                            <a class="nav-item nav-link text-dark" data-toggle="tab" href="#tab-pane-3" role="tab">Reviews (0)</a>
                         </div>
+
+                        <!-- Tab panes -->
                         <div class="tab-content">
-                            <div class="tab-pane fade show active" id="tab-pane-1">
+                            <!-- Description Tab -->
+                            <div class="tab-pane fade show active" id="tab-pane-1" role="tabpanel">
                                 <h4 class="mb-3">Product Description</h4>
                                 <p>{{ $product->description }}</p>
                             </div>
-                            <div class="tab-pane fade" id="tab-pane-2">
+
+                            <!-- Information Tab -->
+                            <div class="tab-pane fade" id="tab-pane-2" role="tabpanel">
                                 <h4 class="mb-3">Additional Information</h4>
                                 <p>{{ $product->information }}</p>
                             </div>
-                            <div class="tab-pane fade" id="tab-pane-3">
+
+                            <!-- Reviews Tab -->
+                            <div class="tab-pane fade" id="tab-pane-3" role="tabpanel">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <h4 class="mb-4">1 review for "Product Name"</h4>
@@ -180,6 +188,8 @@
                                             </div>
                                         </div>
                                     </div>
+
+                                    <!-- Leave a Review -->
                                     <div class="col-md-6">
                                         <h4 class="mb-4">Leave a review</h4>
                                         <small>Your email address will not be published. Required fields are marked *</small>
@@ -220,6 +230,20 @@
         </div>
         <!-- Shop Detail End -->
 
+
+<!-- Add Bootstrap JS and dependencies before the closing body tag -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Optionally, you can initialize the tabs using JS -->
+<script>
+    $(document).ready(function () {
+        $('.nav-tabs a').on('click', function (e) {
+            e.preventDefault();
+            $(this).tab('show');
+        });
+    });
+</script>
 <!-- Include jQuery for easier DOM manipulation (Optional, can be pure JS) -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
