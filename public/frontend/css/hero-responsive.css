@@ -46,7 +46,7 @@
 }
 .img-clip-block {
     display: ruby !important;
-}   
+}
 
 .img-clip-row {
     margin-top: -1px !important;
@@ -226,10 +226,13 @@
         border-radius: 15px !important;
         transform: rotate(-45deg);
     }
+    .mobile-hero{
+        margin-left: 22px;
+      }
 }
 
 @media only screen and (max-width: 1024px) {
-/* 
+/*
 .row>* {
     flex-shrink: 0;
     width: auto !important;
@@ -249,6 +252,8 @@
 /* .img-clip-row {
     margin-top: -1px !important;
 } */
+
+
 
 .hero-roted{
     height: 100px;

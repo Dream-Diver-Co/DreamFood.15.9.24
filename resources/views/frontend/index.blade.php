@@ -9,7 +9,7 @@
 <div class="container-fluid bg-light py-6 my-6 mt-0">
     <div class="container">
     <div class="row g-5 align-items-center" style="height: 700px;">
-        <div class="col-lg-7 col-md-12">
+        <div class="col-lg-6 col-md-12">
             <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-4 animated zoomIn">Welcome to Foody Restorant</small>
             <h1 class="display-1 mb-4 animated zoomIn">Feel<span class="text-primary">The</span>Flavor</h1>
             <div class="animated zoomIn" id="container-text">
@@ -22,7 +22,7 @@
             </div> <br>
             <a href="{{ route('booking')}}" class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 me-4 animated zoomIn">Booking</a>
         </div>
-        <div class="col-sm-12 col-lg-5  img-clip-block">
+        <div class="col-lg-6 col-sm-12 col-lg-5  img-clip-block">
             <div class="row img-clip-row mt-3">
                   <!-- First slideshow -->
                     <div class="col-sm-6 col-lg-6 col-md-6">
@@ -91,15 +91,15 @@
             </div>
 
            <div class="row img-clip-row" style="margin-top: -30px;">
-            <div class="col-lg-12 col-md-12">
-              <div class="bg-wheat rounded hero-mid-roted">
-                    <div class="service-content d-flex align-items-center justify-content-center p-4">
-                        <div class="service-content-icon text-center">
-                            <img src="{{ asset('frontend/img/foody.png') }}" class="img-fluid hero-mid-roted-img" alt="">
+                <div class="col-lg-12 col-md-12 mobile-hero">
+                    <div class="bg-wheat rounded hero-mid-roted">
+                            <div class="service-content d-flex align-items-center justify-content-center p-4">
+                                <div class="service-content-icon text-center">
+                                    <img src="{{ asset('frontend/img/foody.png') }}" class="img-fluid hero-mid-roted-img" alt="">
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
 
             </div>
 
@@ -231,7 +231,8 @@
 
 
     <!-- Menu Start -->
-<div class="container-fluid menu bg-light py-6 my-6">
+
+    <div class="container-fluid menu bg-light py-6 my-6">
     <div class="container">
         <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
             {{-- <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Our Menu</small> --}}
