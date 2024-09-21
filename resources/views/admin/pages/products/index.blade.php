@@ -77,10 +77,12 @@
                             {{-- <td>{{ $product->sub_title }}</td> --}}
                             <td>{{ optional($product->category)->name }}</td>
                             <td>{{ optional($product->subcategory)->name }}</td>
+
                             {{-- <td>{{ $product->old_price }}</td> --}}
                             {{-- <td>{{ $product->description }}</td>
                             <td>{{ $product->sub_description }}</td>
                             <td>{{ $product->information }}</td> --}}
+
                             {{-- <td>
                                 <form action="{{ route('products.updateStatus', $product) }}" method="POST" style="display: inline-block;">
                                     @csrf
@@ -92,6 +94,7 @@
                                     </select>
                                 </form>
                             </td> --}}
+                            
                             <td>
                                 <form action="{{ route('products.updateStatus_1', $product) }}" method="POST" style="display: inline-block;">
                                     @csrf

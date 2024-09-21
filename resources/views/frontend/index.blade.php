@@ -195,7 +195,7 @@
                         <img class="flex-shrink-0 img-fluid choosing-img" src="{{ asset('frontend/img/choosing1.webp') }}" alt="">
                         <h4 class="mb-3">Menu for every taste</h4>
                         <p class="mb-4 pera-size"> Based on your wishes, we give advice on which hairstyle and hair length best suits your face. And our color specialists will give you the right color advice.</p>
-                        <a href="choose.html" class="btn btn-primary px-4 py-2 rounded-pill">Read More</a>
+                        {{-- <a href="choose.html" class="btn btn-primary px-4 py-2 rounded-pill">Read More</a> --}}
                     </div>
                 </div>
             </div>
@@ -207,7 +207,7 @@
                         <img class="flex-shrink-0 img-fluid choosing-img" src="{{ asset('frontend/img/choosing2.png') }}" alt="">
                         <h4 class="mb-3">Always fresh ingredients</h4>
                         <p class="mb-4 pera-size">We have been cutting, dyeing and styling men as women for 20 years. Our stylists are trained in … and are aware of the latest techniques.</p>
-                        <a href="choose.html" class="btn btn-primary px-4 py-2 rounded-pill">Read More</a>
+                        {{-- <a href="choose.html" class="btn btn-primary px-4 py-2 rounded-pill">Read More</a> --}}
                     </div>
                 </div>
             </div>
@@ -219,7 +219,7 @@
                         <img class="flex-shrink-0 img-fluid choosing-img" src="{{ asset('frontend/img/choosing3.png') }}" alt="">
                         <h4 class="mb-3">Experienced chefs</h4>
                         <p class="mb-4 pera-size">Your wishes and hair type determine the exact price of the treatment. We provide full transparency on this before we start.</p>
-                        <a href="choose.html" class="btn btn-primary px-4 py-2 rounded-pill">Read More</a>
+                        {{-- <a href="choose.html" class="btn btn-primary px-4 py-2 rounded-pill">Read More</a> --}}
                     </div>
                 </div>
             </div>
@@ -358,7 +358,7 @@
                             <i class="fas fa-cheese fa-7x text-primary mb-4"></i>
                             <h4 class="mb-3">Wedding Services</h4>
                             <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
-                            <a href="wedding.html" class="btn btn-primary px-4 py-2 rounded-pill">Read More</a>
+                            {{-- <a href=" " class="btn btn-primary px-4 py-2 rounded-pill">Read More</a> --}}
                         </div>
                     </div>
                 </div>
@@ -370,7 +370,7 @@
                             <i class="fas fa-pizza-slice fa-7x text-primary mb-4"></i>
                             <h4 class="mb-3">Corporate Catering</h4>
                             <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
-                            <a href="corporate.html" class="btn btn-primary px-4 py-2 rounded-pill">Read More</a>
+                            {{-- <a href=" " class="btn btn-primary px-4 py-2 rounded-pill">Read More</a> --}}
                         </div>
                     </div>
                 </div>
@@ -382,7 +382,7 @@
                             <i class="fas fa-hotdog fa-7x text-primary mb-4"></i>
                             <h4 class="mb-3">Event Catering</h4>
                             <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
-                            <a href="event.html" class="btn btn-primary px-4 py-2 rounded-pill">Read More</a>
+                            {{-- <a href=" " class="btn btn-primary px-4 py-2 rounded-pill">Read More</a> --}}
                         </div>
                     </div>
                 </div>
@@ -394,7 +394,7 @@
                             <i class="fas fa-hamburger fa-7x text-primary mb-4"></i>
                             <h4 class="mb-3">Home Delivery</h4>
                             <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
-                            <a href="delivery.html" class="btn btn-primary px-4 py-2 rounded-pill">Read More</a>
+                            {{-- <a href=" " class="btn btn-primary px-4 py-2 rounded-pill">Read More</a> --}}
                         </div>
                     </div>
                 </div>
