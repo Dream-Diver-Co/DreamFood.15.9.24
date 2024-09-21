@@ -44,6 +44,12 @@ label {
     animation: rotate 50s linear infinite;
   }
 
+.product-status-text{
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: rgb(3, 122, 13);
+}
 
 
 
@@ -59,6 +65,10 @@ label {
         margin-left: 53px;
     }
 
+    .product-status{
+        justify-content: center;
+    }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -66,7 +76,9 @@ label {
     /* CSS rules for tablets */
     .mobile-view{
         display: none;
-     }
+    }
+
+
 
 }
 

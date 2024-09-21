@@ -38,14 +38,8 @@
         <p><strong>Description:</strong> {{ $product->description }}</p>
         <p><strong>Information:</strong> {{ $product->information }}</p>
         <!-- Check if the product is available -->
-        <p><strong>Status:</strong>
-            @if($product->status == 1)
-                <span class="text-success">Available</span>
-            @else
-                <span class="text-danger">Not Available</span>
-            @endif
-        </p>
-        
+        <p><strong>Status:</strong> {{ $product->status_1 }}</p>
+
         <p><strong>Image:</strong>
         @if($product->image)
         <img src="{{ asset('storage/' . $product->image) }}" alt="Product Image" width="300">

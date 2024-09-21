@@ -57,7 +57,7 @@
                         <th>Sub Description</th>
                         <th>Information</th> --}}
                         <th>Status</th>
-                        <th>Status-1</th>
+                        {{-- <th>Status-1</th> --}}
                         <th>Actions</th>
 
                     </tr>
@@ -81,7 +81,7 @@
                             {{-- <td>{{ $product->description }}</td>
                             <td>{{ $product->sub_description }}</td>
                             <td>{{ $product->information }}</td> --}}
-                            <td>
+                            {{-- <td>
                                 <form action="{{ route('products.updateStatus', $product) }}" method="POST" style="display: inline-block;">
                                     @csrf
                                     <select name="status" onchange="this.form.submit()" class="status form-control-sm">
@@ -91,7 +91,7 @@
                                         <option value="Offer" {{ $product->status == 'Offer' ? 'selected' : '' }}>Offer</option>
                                     </select>
                                 </form>
-                            </td>
+                            </td> --}}
                             <td>
                                 <form action="{{ route('products.updateStatus_1', $product) }}" method="POST" style="display: inline-block;">
                                     @csrf
