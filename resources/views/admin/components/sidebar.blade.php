@@ -28,7 +28,7 @@
 
                 <li>
                     <a href="javascript: void(0);" class="has-arrow waves-effect">
-                        <i class="fa-solid fa-list"></i>
+                        <i class="fa-solid fa-earth-americas"></i>
                         <span>Country Foods</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
@@ -39,7 +39,7 @@
 
                 <li>
                     <a href="javascript: void(0);" class="has-arrow waves-effect">
-                        <i class="fa-solid fa-table-columns"></i>
+                        <i class="fa-solid fa-utensils"></i>
                         <span>Foods Items</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
@@ -50,7 +50,7 @@
 
                 <li>
                     <a href="javascript: void(0);" class="has-arrow waves-effect">
-                        <i class="fa-brands fa-product-hunt"></i>
+                        <i class="fa-solid fa-bowl-food"></i>
                         <span>Foods</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
@@ -60,7 +60,7 @@
                 </li>
                 <li>
                     <a href="javascript: void(0);" class="has-arrow waves-effect">
-                        <i class="fa-brands fa-first-order"></i>
+                        <i class="fa-solid fa-truck-fast"></i>
                         <span>Manage Orders</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">

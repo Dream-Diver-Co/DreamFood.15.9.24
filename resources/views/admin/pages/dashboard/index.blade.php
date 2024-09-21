@@ -33,7 +33,7 @@
                     </div>
                     <div class="avatar-sm">
                         <span class="avatar-title bg-light text-primary rounded-3">
-                            <i class="ri-shopping-cart-2-line font-size-24"></i>
+                            <i class="fa-solid fa-truck-ramp-box font-size-24"></i>
                         </span>
                     </div>
                 </div>
@@ -50,8 +50,8 @@
                         <p class="text-muted mb-0"><span class="text-danger fw-bold font-size-12 me-2"><i class="ri-arrow-right-down-line me-1 align-middle"></i>{{ $newOrdersCount }}</span>from previous period</p>
                     </div>
                     <div class="avatar-sm">
-                        <span class="avatar-title bg-light text-success rounded-3">
-                            <i class="mdi mdi-currency-usd font-size-24"></i>
+                        <span class="avatar-title bg-light text-danger rounded-3">
+                            <i class="fa-solid fa-cart-plus font-size-24"></i>
                         </span>
                     </div>
                 </div>
@@ -68,8 +68,8 @@
                         <p class="text-muted mb-0"><span class="text-success fw-bold font-size-12 me-2"><i class="ri-arrow-right-up-line me-1 align-middle"></i>{{ $totalProducts }}</span>from previous period</p>
                     </div>
                     <div class="avatar-sm">
-                        <span class="avatar-title bg-light text-success rounded-3">
-                            <i class="mdi mdi-currency-btc font-size-24"></i>
+                        <span class="avatar-title bg-light text-warning rounded-3">
+                            <i class="fa-solid fa-bowl-rice font-size-24"></i>
                         </span>
                     </div>
                 </div>
@@ -109,7 +109,8 @@
                     </div>
                     <div class="avatar-sm">
                         <span class="avatar-title bg-light text-primary rounded-3">
-                            <i class="ri-shopping-cart-2-line font-size-24"></i>
+                            {{-- <i class="ri-shopping-cart-2-line "></i> --}}
+                            <i class="fa-solid fa-earth-americas font-size-24"></i>
                         </span>
                     </div>
                 </div>
@@ -127,7 +128,7 @@
                     </div>
                     <div class="avatar-sm">
                         <span class="avatar-title bg-light text-success rounded-3">
-                            <i class="mdi mdi-currency-usd font-size-24"></i>
+                            <i class="fa-solid fa-truck-fast font-size-24"></i>
                         </span>
                     </div>
                 </div>
@@ -144,8 +145,8 @@
                         <p class="text-muted mb-0"><span class="text-success fw-bold font-size-12 me-2"><i class="ri-arrow-right-up-line me-1 align-middle"></i>{{ $totalSubcategories }}</span>from previous period</p>
                     </div>
                     <div class="avatar-sm">
-                        <span class="avatar-title bg-light text-success rounded-3">
-                            <i class="mdi mdi-currency-btc font-size-24"></i>
+                        <span class="avatar-title bg-light text-black rounded-3">
+                            <i class="fa-solid fa-utensils font-size-24"></i>
                         </span>
                     </div>
                 </div>
