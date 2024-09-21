@@ -56,7 +56,7 @@
                                     <th>Country Foods Name</th>
                                     <th>Total Foods Items</th>
                                     <th>Image</th>
-                                    <th>Description</th>
+                                    {{-- <th>Description</th> --}}
                                     <th>Actions</th>
                                 </tr>
                             </thead>
@@ -69,7 +69,7 @@
                                     <td>
                                         <img style="height: 50px; width: 80px;" src="{{ asset('storage/' . $category->image) }}" alt="{{ $category->name }}">
                                     </td>
-                                    <td>{{ $category->description }}</td>
+                                    {{-- <td>{{ $category->description }}</td> --}}
                                     <td>
                                         <a href="{{ route('categories.edit', $category) }}" title="Edit" class="btn btn-primary btn-sm">Edit</a>
                                         <form method="POST" action="{{ route('categories.destroy', $category) }}" accept-charset="UTF-8" style="display:inline">

@@ -154,7 +154,7 @@
     <!-- Invoice area Starts -->
     <div class="invoice-area">
         <div class="invoice-header">
-            <img src="{{ public_path('admin/assets/images/Dream.png') }}" alt="logo">
+            <img src="{{ public_path('admin/assets/images/logo1.jpg') }}" alt="logo">
             <h1 class="invoice-title">Invoice {{ $order->first_name }}</h1>
         </div>
         <div class="invoice-details">
@@ -184,8 +184,8 @@
                     <tr>
                         <th>Image</th>
                         <th>Name</th>
-                        <th>Size</th>
-                        <th>Color</th>
+                        {{-- <th>Size</th>
+                        <th>Color</th> --}}
                         <th>Price</th>
                         <th>Quantity</th>
                         <th>Total</th>
@@ -202,15 +202,15 @@
                             @endif
                         </td>
                         <td>{{ $item->product->name }}</td>
-                        <td>{{ $item->size }}</td>
-                        <td>{{ $item->color }}</td>
+                        {{-- <td>{{ $item->size }}</td>
+                        <td>{{ $item->color }}</td> --}}
                         <td>${{ number_format($item->product->price, 2) }}</td>
                         <td>{{ $item->quantity }}</td>
                         <td>${{ number_format($item->product->price * $item->quantity, 2) }}</td>
                     </tr>
                     @endforeach
                     <tr class="table_footer_row">
-                        <td colspan="6"><strong>Total Amount</strong></td>
+                        <td colspan="4"><strong>Total Amount</strong></td>
                         <td><strong>${{ number_format($order->total_amount, 2) }}</strong></td>
                     </tr>
                 </tbody>
@@ -260,7 +260,7 @@
         </div>
 
         <footer>
-            <p>&copy; {{ date('Y') }} DREAM SHOP. All rights reserved.</p>
+            <p>&copy; {{ date('Y') }} DREAM FOODS. All rights reserved.</p>
         </footer>
     </div>
     <!-- Invoice area End -->

@@ -55,10 +55,11 @@
                                 <tr>
                                     <th>#</th>
                                     <th>Foods Items Name</th>
+                                    <th>Country Name</th>
                                     <th>Total Foods</th>
                                     <th>Image</th>
                                     <th>Status</th>
-                                    <th>Description</th>
+                                    {{-- <th>Description</th> --}}
                                     <th>Actions</th>
                                 </tr>
                             </thead>
@@ -67,7 +68,8 @@
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
                                     <td>{{ $subcategory->name }}</td>
-                                    <td>{{ $subcategory->products_count }} Products</td>
+                                    <td>{{ optional($subcategory->category)->name }}</td>
+                                    <td>{{ $subcategory->products_count }} Foods</td>
                                     <td>
                                         <img style="height: 50px; width: 80px;" src="{{ asset('storage/' . $subcategory->image) }}" alt="{{ $subcategory->name }}">
                                     </td>
@@ -84,7 +86,7 @@
                                         </form>
                                     </td>
 
-                                    <td>{{ $subcategory->description }}</td>
+                                    {{-- <td>{{ $subcategory->description }}</td> --}}
                                     <td>
                                         <a href="{{ route('subcategories.edit', $subcategory) }}" title="Edit" class="btn btn-primary btn-sm">Edit</a>
                                         <form method="POST" action="{{ route('subcategories.destroy', $subcategory) }}" accept-charset="UTF-8" style="display:inline">

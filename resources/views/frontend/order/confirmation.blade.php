@@ -31,8 +31,8 @@
                             <tr>
                                 <th scope="col">Image</th>
                                 <th scope="col">Name</th>
-                                <th scope="col">Size</th>
-                                <th scope="col">Color</th>
+                                {{-- <th scope="col">Size</th>
+                                <th scope="col">Color</th> --}}
                                 <th scope="col">Price</th>
                                 <th scope="col">Quantity</th>
                                 <th scope="col">Total</th>
@@ -49,8 +49,8 @@
                                         @endif
                                     </td>
                                     <td>{{ $item->product->name }}</td>
-                                    <td>{{ $item->size }}</td>
-                                    <td>{{ $item->color }}</td>
+                                    {{-- <td>{{ $item->size }}</td>
+                                    <td>{{ $item->color }}</td> --}}
                                     <td>${{ number_format($item->product->price, 2) }}</td>
                                     <td>{{ $item->quantity }}</td>
                                     <td>${{ number_format($item->product->price * $item->quantity, 2) }}</td>
