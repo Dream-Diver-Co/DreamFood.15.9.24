@@ -56,7 +56,7 @@
                                             <h4 class="text-success">${{ $product->price }}</h4>
                                         </div>
                                         <div class=" col-md-6 col-sm-12 d-flex" >
-                                            <h4 class="text-danger"><del>${{ $product->old_price }}</del></h4>
+                                            <h4 class="text-danger">$<del>{{ $product->old_price }}</del></h4>
                                         </div>
                                         <form action="{{ route('cart.add') }}" method="POST">
                                             @csrf
