@@ -86,19 +86,19 @@ class SubcategoryController extends Controller
 
 
 
-    public function updateStatus(Request $request, Subcategory $subcategory)
-    {
-        // Validate the status field
-        $request->validate([
-            'status' => 'required|string|in:breakfast,lunch,dinner,drinks,dessert',
-        ]);
+    // public function updateStatus(Request $request, Subcategory $subcategory)
+    // {
+    //     // Validate the status field
+    //     $request->validate([
+    //         'status' => 'required|string|in:breakfast,lunch,dinner,drinks,dessert',
+    //     ]);
 
-        // Update the subcategory's status
-        $subcategory->status = $request->status;
-        $subcategory->save();
+    //     // Update the subcategory's status
+    //     $subcategory->status = $request->status;
+    //     $subcategory->save();
 
-        return redirect()->route('subcategories.index')->with('success', 'Subcategory status updated successfully.');
-    }
+    //     return redirect()->route('subcategories.index')->with('success', 'Subcategory status updated successfully.');
+    // }
 
 
 

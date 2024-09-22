@@ -57,7 +57,7 @@
                         <th>Sub Description</th>
                         <th>Information</th> --}}
                         <th>Status</th>
-                        {{-- <th>Status-1</th> --}}
+                        <th>Status-1</th>
                         <th>Actions</th>
 
                     </tr>
@@ -83,18 +83,23 @@
                             <td>{{ $product->sub_description }}</td>
                             <td>{{ $product->information }}</td> --}}
 
-                            {{-- <td>
+                            <td>
                                 <form action="{{ route('products.updateStatus', $product) }}" method="POST" style="display: inline-block;">
                                     @csrf
                                     <select name="status" onchange="this.form.submit()" class="status form-control-sm">
-                                        <option value="Regular" {{ $product->status == 'Regular' ? 'selected' : '' }}>Regular</option>
+                                        <option value="breakfast" {{ (old('status', $product->status) == 'breakfast') ? 'selected' : '' }}>Breakfast</option>
+                                                <option value="lunch" {{ (old('status', $product->status) == 'lunch') ? 'selected' : '' }}>Lunch</option>
+                                                <option value="dinner" {{ (old('status', $product->status) == 'dinner') ? 'selected' : '' }}>Dinner</option>
+                                                <option value="drinks" {{ (old('status', $product->status) == 'drinks') ? 'selected' : '' }}>Drinks</option>
+                                                <option value="dessert" {{ (old('status', $product->status) == 'dessert') ? 'selected' : '' }}>Dessert</option>
+                                        {{-- <option value="Regular" {{ $product->status == 'Regular' ? 'selected' : '' }}>Regular</option>
                                         <option value="Featured" {{ $product->status == 'Featured' ? 'selected' : '' }}>Featured</option>
                                         <option value="Recent" {{ $product->status == 'Recent' ? 'selected' : '' }}>Recent</option>
-                                        <option value="Offer" {{ $product->status == 'Offer' ? 'selected' : '' }}>Offer</option>
+                                        <option value="Offer" {{ $product->status == 'Offer' ? 'selected' : '' }}>Offer</option> --}}
                                     </select>
                                 </form>
-                            </td> --}}
-                            
+                            </td>
+
                             <td>
                                 <form action="{{ route('products.updateStatus_1', $product) }}" method="POST" style="display: inline-block;">
                                     @csrf

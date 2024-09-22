@@ -11,7 +11,7 @@ class CreateProductsTable extends Migration
         Schema::create('products', function (Blueprint $table) {
             $table->id();
             $table->foreignId('subcategory_id')->constrained()->onDelete('cascade');
-            $table->foreignId('category_id')->constrained()->onDelete('cascade');
+            $table->foreignId('category_id')->constrained()->onDelete('cascade')->nullable();
             $table->string('name');
             $table->string('title')->nullable();
             $table->string('sub_title')->nullable();
@@ -28,7 +28,7 @@ class CreateProductsTable extends Migration
 
         // 31
         Schema::table('products', function (Blueprint $table) {
-            $table->string('status')->default('Regular'); // Add 'status' column with default 'Regular'
+            $table->string('status')->default('breakfast'); // Add 'status' column with default 'Regular'
             $table->string('status_1')->default('In Stock');
         });
     }

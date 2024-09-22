@@ -58,7 +58,7 @@
                                     <th>Country Name</th>
                                     <th>Total Foods</th>
                                     <th>Image</th>
-                                    <th>Status</th>
+                                    {{-- <th>Status</th> --}}
                                     {{-- <th>Description</th> --}}
                                     <th>Actions</th>
                                 </tr>
@@ -73,7 +73,7 @@
                                     <td>
                                         <img style="height: 50px; width: 80px;" src="{{ asset('storage/' . $subcategory->image) }}" alt="{{ $subcategory->name }}">
                                     </td>
-                                    <td>
+                                    {{-- <td>
                                         <form action="{{ route('subcategories.updateStatus', $subcategory) }}" method="POST" style="display: inline-block;">
                                             @csrf
                                             <select name="status" onchange="this.form.submit()" class="status form-control-sm">
@@ -84,7 +84,7 @@
                                                 <option value="dessert" {{ (old('status', $subcategory->status) == 'dessert') ? 'selected' : '' }}>Dessert</option>
                                             </select>
                                         </form>
-                                    </td>
+                                    </td> --}}
 
                                     {{-- <td>{{ $subcategory->description }}</td> --}}
                                     <td>

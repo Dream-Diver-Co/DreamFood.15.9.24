@@ -56,7 +56,7 @@
             <div class="tab-content">
                 <div id="tab-6" class="tab-pane fade show p-0 active">
                     <div class="row g-4">
-                        @foreach($category->subCategories->where('status', 'breakfast') as $subCategory)
+                        @foreach($category->subCategories as $subCategory)
                             <div class="col-lg-6 wow bounceInUp" data-wow-delay="0.1s">
                                 <a href="{{ route('subcategories.products', $subCategory->id) }}">
                                     <div class="menu-item d-flex align-items-center">

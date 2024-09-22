@@ -33,7 +33,7 @@ class CartController extends Controller
             ]
         );
 
-        return redirect()->route('product')->with('success', 'Product added to cart');
+        return redirect()->back()->with('success', 'Product added to cart');
     }
 
     public function show()

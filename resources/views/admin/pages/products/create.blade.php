@@ -57,7 +57,7 @@
                 </div>
                 <div class="col-lg-6 col-sm-12">
                     <label for="subcategory_id">Foods Items Select <i class="fa-solid fa-caret-down"></i></label><br>
-                    <select name="subcategory_id" id="subcategory_id" class="form-control" required>
+                    <select name="subcategory_id" id="subcategory_id" class="form-control">
                         @foreach($subcategories as $subcategory)
                             <option value="{{ $subcategory->id }}">{{ $subcategory->name ?? 'Unnamed Subcategory' }}</option>
                         @endforeach

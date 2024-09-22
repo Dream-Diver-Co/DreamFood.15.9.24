@@ -91,7 +91,7 @@ class FrontendController extends Controller
         $cartItems = Cart::where('user_id', auth()->id())->with('product')->get();
 
         // Fetch products with "regular" status
-        $products = Product::where('status', 'regular')
+        $products = Product::where('status', 'breakfast')
             ->with('subcategory', 'category')
             ->get();
 
@@ -190,6 +190,17 @@ class FrontendController extends Controller
         return view('frontend.page.product_details', compact('product','cartItems')); // Pass the product data to the view
     }
 
+    public function showProductsByCategory(Category $category)
+    {
+        // Retrieve cart items for the authenticated user
+        $cartItems = Cart::where('user_id', auth()->id())->with('product')->get();
+
+        // Load the products for the given category, along with subcategories if needed
+        $products = Product::where('category_id', $category->id)->get();
+
+        // Return the view, passing the category and products data
+        return view('frontend.page.category_products', compact('category', 'products','cartItems'));
+    }
 
     public function showSubcategoryProducts($id)
     {

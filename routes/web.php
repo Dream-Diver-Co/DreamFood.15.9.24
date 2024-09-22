@@ -20,6 +20,7 @@ use App\Http\Controllers\OrderController;
 use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\HeaderController;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -47,6 +48,8 @@ Route::get('/product', [FrontendController::class, 'product'])->name('product');
 
 
 Route::get('/categories/{category}/subcategories', [FrontendController::class, 'showSubcategories'])->name('categories.subcategories');
+// Add this route for showing products by category
+Route::get('/categories/{category}/products', [FrontendController::class, 'showProductsByCategory'])->name('categories.products');
 Route::get('/subcategories/{subcategory}/products', [FrontendController::class, 'showProducts'])->name('subcategories.products');
 Route::get('/product_details/{id}', [FrontendController::class, 'product_details'])->name('product_details');
 
@@ -111,7 +114,7 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
         Route::resource('about', AboutController::class);
         Route::resource('categories', CategoryController::class);
         Route::resource('subcategories', SubcategoryController::class);
-        Route::post('/subcategories/{subcategory}/status', [SubcategoryController::class, 'updateStatus'])->name('subcategories.updateStatus');
+        // Route::post('/subcategories/{subcategory}/status', [SubcategoryController::class, 'updateStatus'])->name('subcategories.updateStatus');
         Route::resource('products', ProductController::class);
         Route::post('/products/{product}/status', [ProductController::class, 'updateStatus'])->name('products.updateStatus');
         Route::post('/products/{product}/status_1', [ProductController::class, 'updateStatus_1'])->name('products.updateStatus_1');

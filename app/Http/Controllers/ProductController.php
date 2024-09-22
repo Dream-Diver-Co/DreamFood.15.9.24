@@ -101,7 +101,8 @@ class ProductController extends Controller
     public function updateStatus(Request $request, Product $product)
     {
         $request->validate([
-            'status' => 'required|string|in:Regular,Featured,Recent,Offer',
+            // 'status' => 'required|string|in:Regular,Featured,Recent,Offer',
+            'status' => 'required|string|in:breakfast,lunch,dinner,drinks,dessert',
 
         ]);
 
