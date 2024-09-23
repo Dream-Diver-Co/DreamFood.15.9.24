@@ -2,12 +2,6 @@
 
 @section("content")
 
-@if(session('flash_message'))
-    <div class="alert alert-success">
-        {{ session('flash_message') }}
-    </div>
-@endif
-
         <!-- Hero Start -->
         <div class="container-fluid bg-light mt-0">
             <div class="container text-center animated bounceInDown">
@@ -30,24 +24,28 @@
                         </div>
                         <div class="col-md-6 col-lg-7">
                             {{-- <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> --}}
-                            {{-- <form action="{{ url('usercontact') }}" method="post" enctype="multipart/form-data">
+                            <form action="{{ url('usercontact') }}" method="post" enctype="multipart/form-data">
                                 <input type="text" name="name" id="name" class="w-100 form-control p-3 mb-4 border-primary bg-white" placeholder="Your Name">
                                 <input type="email" name="email" id="email" class="w-100 form-control p-3 mb-4 border-primary bg-white" placeholder="Enter Your Email">
                                 <input type="tel" name="phone" id="phone"  class="w-100 form-control p-3 mb-4 border-primary bg-white" placeholder="Phone  Number">
                                 <input type="text" name="subject" id="subject" class="w-100 form-control p-3 mb-4 border-primary bg-white" placeholder="Subject">
                                 <textarea name="note" id="note" class="w-100 form-control mb-4 p-3 border-primary bg-white" rows="4" cols="10" placeholder="Your Message"></textarea>
                                 <button type="submit" value="Save" class="w-100 btn btn-primary form-control p-3 border-primary bg-primary rounded-pill">Submit Now</button>
-                            </form> --}}
-                            <form action="{{ url('usercontact') }}" method="POST" enctype="multipart/form-data">
-                                @csrf <!-- This generates the CSRF token to secure the form submission -->
-                                <input type="text" name="name" id="name" class="w-100 form-control p-3 mb-4 border-primary bg-white" placeholder="Your Name">
-                                <input type="email" name="email" id="email" class="w-100 form-control p-3 mb-4 border-primary bg-white" placeholder="Enter Your Email">
-                                <input type="tel" name="phone" id="phone" class="w-100 form-control p-3 mb-4 border-primary bg-white" placeholder="Phone Number">
-                                <input type="text" name="subject" id="subject" class="w-100 form-control p-3 mb-4 border-primary bg-white" placeholder="Subject">
-                                <textarea name="note" id="note" class="w-100 form-control mb-4 p-3 border-primary bg-white" rows="4" cols="10" placeholder="Your Message"></textarea>
-                                <button type="submit" value="Save" class="w-100 btn btn-primary form-control p-3 border-primary bg-primary rounded-pill">Submit Now</button>
                             </form>
-
+                            {{-- <form action="{{ url('admin/usercontact') }}" method="post" enctype="multipart/form-data">
+                                @csrf --}}
+                                {{-- <label>Name</label></br>
+                                <input type="text" name="name" id="name" class="form-control"></br>
+                                <label>email</label></br>
+                                <input type="email" name="email" id="email" class="form-control"></br>
+                                <label>phone</label></br>
+                                <input type="text" name="phone" id="phone" class="form-control"></br>
+                                <label>subject</label></br>
+                                <input type="subject" name="subject" id="subject" class="form-control"></br>
+                                <label>Note</label></br>
+                                <input type="text" name="note" id="note" class="form-control"></br>
+                                <input type="submit" value="Save" class="btn btn-success"></br> --}}
+                            {{-- </form> --}}
                         </div>
                         <div class="col-md-6 col-lg-5">
                             <div>
@@ -81,18 +79,6 @@
             </div>
         </div>
         <!-- Contact End -->
-
-
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                const successMessage = document.getElementById('success-message');
-                if (successMessage) {
-                    setTimeout(() => {
-                        successMessage.style.display = 'none';
-                    }, 5000);
-                }
-            });
-        </script>
 
 @endsection
 

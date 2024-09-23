@@ -38,6 +38,7 @@ class FrontendController extends Controller
     {
         // Retrieve cart items for the authenticated user
         $cartItems = Cart::where('user_id', auth()->id())->with('product')->get();
+        
         return view('frontend.page.contact',compact('cartItems'));
     }
 

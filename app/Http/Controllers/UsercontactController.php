@@ -21,18 +21,48 @@ class UserContactController extends Controller
         return view('admin.pages.contact.user_contact.create');
     }
 
-    public function store(Request $request)
-    {
-        $input = $request->all();
-        if ($request->hasFile('image')) {
-            $file = $request->file('image');
-            $path = $file->store('images', 'public');
-            $input['image'] = $path;
-        }
-        UserContact::create($input);
+    // public function store(Request $request)
+    // {
+    //     $input = $request->all();
+    //     if ($request->hasFile('image')) {
+    //         $file = $request->file('image');
+    //         $path = $file->store('images', 'public');
+    //         $input['image'] = $path;
+    //     }
+    //     UserContact::create($input);
 
-        return redirect()->back()->with('flash_message', 'UserContact Added!');
+    //     return redirect()->back()->with('flash_message', 'UserContact Added!');
+    // }
+
+    public function store(Request $request)
+{
+    // Validate the request
+    $request->validate([
+        'name' => 'required|string|max:255',
+        'email' => 'required|email|max:255',
+        'phone' => 'required|string|max:15',
+        'subject' => 'required|string|max:255',
+        'note' => 'required|string|max:500',
+        'image' => 'nullable|image|max:2048', // Optional image validation
+    ]);
+
+    // Get all the request data
+    $input = $request->all();
+
+    // Handle the image file upload if there is one
+    if ($request->hasFile('image')) {
+        $file = $request->file('image');
+        $path = $file->store('images', 'public');
+        $input['image'] = $path;
     }
+
+    // Save the data to the database
+    UserContact::create($input);
+
+    // Redirect back with a success message
+    return redirect()->back()->with('flash_message', 'Your message has been sent!');
+}
+
 
     public function show($id)
     {

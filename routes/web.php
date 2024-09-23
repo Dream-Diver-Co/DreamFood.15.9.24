@@ -42,6 +42,9 @@ Route::get('/chef', [FrontendController::class, 'chef'])->name('chef');
 Route::get('/subscription', [FrontendController::class, 'subscription'])->name('subscription');
 Route::get('/booking', [FrontendController::class, 'booking'])->name('booking');
 
+Route::post('usercontact', [UserContactController::class, 'store']);
+
+
 Route::get('/shop', [FrontendController::class, 'shop'])->name('shop');
 Route::get('/subcategories', [FrontendController::class, 'subcategory'])->name('subcategory');
 Route::get('/product', [FrontendController::class, 'product'])->name('product');
