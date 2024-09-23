@@ -38,23 +38,19 @@
                                 <thead>
                                     <tr>
                                         <th>#</th>
+                                        <th>Actions</th>
                                         <th>Name</th>
                                         <th>Email</th>
                                         <th>Phone</th>
                                         <th>Subject</th>
                                         <th>Note</th>
-                                        <th>Actions</th>
+
                                     </tr>
                                 </thead>
                                 <tbody>
                                 @foreach($usercontacts as $item)
                                     <tr>
                                         <td>{{ $loop->iteration }}</td>
-                                        <td>{{ $item->name }}</td>
-                                        <td>{{ $item->email }}</td>
-                                        <td>{{ $item->phone }}</td>
-                                        <td>{{ $item->subject }}</td>
-                                        <td>{{ $item->note }}</td>
                                         <td>
                                             <a href="{{ url('admin/usercontact/' . $item->id) }}" title="View UserContact"><button class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i> View</button></a>
                                             <form method="POST" action="{{ url('admin/usercontact' . '/' . $item->id) }}" accept-charset="UTF-8" style="display:inline">
@@ -63,6 +59,12 @@
                                                 <button type="submit" class="btn btn-danger btn-sm" title="Delete UserContact" onclick="return confirm('Confirm delete?')"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button>
                                             </form>
                                         </td>
+                                        <td>{{ $item->name }}</td>
+                                        <td>{{ $item->email }}</td>
+                                        <td>{{ $item->phone }}</td>
+                                        <td>{{ $item->subject }}</td>
+                                        <td>{{ $item->note }}</td>
+
                                     </tr>
                                 @endforeach
                                 </tbody>

@@ -2,11 +2,19 @@
 
 @section("content")
 
-@if(session('flash_message'))
-    <div class="alert alert-success">
-        {{ session('flash_message') }}
+<div class="container-fluid">
+    <div class="row px-xl-5">
+        <div class="col-12">
+            <div class="col-12">
+                @if(session('flash_message'))
+                    <div class="alert alert-success" id="flash-message">
+                        {{ session('flash_message') }}
+                    </div>
+                @endif
+            </div>
+        </div>
     </div>
-@endif
+</div>
 
         <!-- Hero Start -->
         <div class="container-fluid bg-light mt-0">
@@ -83,16 +91,19 @@
         <!-- Contact End -->
 
 
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                const successMessage = document.getElementById('success-message');
-                if (successMessage) {
-                    setTimeout(() => {
-                        successMessage.style.display = 'none';
-                    }, 5000);
+    <script>
+        // Wait for the DOM to fully load
+        document.addEventListener('DOMContentLoaded', function () {
+            // Set a timeout to hide the flash message after 5 seconds (5000 ms)
+            setTimeout(function () {
+                let flashMessage = document.getElementById('flash-message');
+                if (flashMessage) {
+                    flashMessage.style.display = 'none'; // Hide the flash message
                 }
-            });
-        </script>
+            }, 3000); // 3000 ms = 3 seconds
+        });
+    </script>
+
 
 @endsection
 
