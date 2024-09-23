@@ -24,7 +24,7 @@
 <div class="card">
   <div class="card-header">Admincontact Details</div>
   <div class="card-body">
-    <h2>Map Location: {{ $admincontact->map }}</h2>
+    <p>Map Location: {{ $admincontact->map }}</p>
     <p>Address: {{ $admincontact->address }}</p>
     <p>Email: {{ $admincontact->email }}</p>
     <p>Phone: {{ $admincontact->phone }}</p>
