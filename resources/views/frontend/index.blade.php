@@ -357,7 +357,7 @@
                         <div class="service-content-icon text-center">
                             <i class="fas fa-cheese fa-7x text-primary mb-4"></i>
                             <h4 class="mb-3">Wedding Services</h4>
-                            <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
+                            <p class="mb-4">Wedding services ensure perfect planning, decoration, catering, and unforgettable celebrations.</p>
                             {{-- <a href=" " class="btn btn-primary px-4 py-2 rounded-pill">Read More</a> --}}
                         </div>
                     </div>
@@ -369,7 +369,7 @@
                         <div class="service-content-icon text-center">
                             <i class="fas fa-pizza-slice fa-7x text-primary mb-4"></i>
                             <h4 class="mb-3">Corporate Catering</h4>
-                            <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
+                            <p class="mb-4">Corporate catering offers professional meal services for business events and meetings.</p>
                             {{-- <a href=" " class="btn btn-primary px-4 py-2 rounded-pill">Read More</a> --}}
                         </div>
                     </div>
@@ -381,7 +381,7 @@
                         <div class="service-content-icon text-center">
                             <i class="fas fa-hotdog fa-7x text-primary mb-4"></i>
                             <h4 class="mb-3">Event Catering</h4>
-                            <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
+                            <p class="mb-4">Event catering means the provision of food and services at large events.</p>
                             {{-- <a href=" " class="btn btn-primary px-4 py-2 rounded-pill">Read More</a> --}}
                         </div>
                     </div>
@@ -393,7 +393,7 @@
                         <div class="service-content-icon text-center">
                             <i class="fas fa-hamburger fa-7x text-primary mb-4"></i>
                             <h4 class="mb-3">Home Delivery</h4>
-                            <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
+                            <p class="mb-4">Home delivery delivers fast and safe food to customers at home.</p>
                             {{-- <a href=" " class="btn btn-primary px-4 py-2 rounded-pill">Read More</a> --}}
                         </div>
                     </div>
