@@ -74,7 +74,8 @@
                                     <i class="fa fa-phone-alt fa-2x text-primary me-4"></i>
                                     <div class="">
                                         <h4>Telephone</h4>
-                                        <p class="mb-2">{{ $item->phone }}</p>
+                                        {{-- <p class="mb-2">{{ $item->phone }}</p> --}}
+                                        <a href="tel:{{ $item->phone }}">{{ $item->phone }}</a>
                                     </div>
                                 </div>
                             </div>
@@ -91,12 +92,12 @@
             <div class="container">
                 <div class="p-2 bg-wheat rounded contact-form">
                     <div class="row g-4">
-                        <div class="col-lg-12 col-md-6">
+                        <div class="col-lg-12">
                             @if($admincontacts->isNotEmpty())
                             @php
                                 $item = $admincontacts->first();
                             @endphp
-                            <iframe class="contact-map col-lg-12 col-md-6 col-12" style="height: 400px" src="{{ $item->map }}">
+                            <iframe class="contact-map col-lg-12 col-12" style="height: 400px;" src="{{ $item->map }}">
                             </iframe>
                             @endif
                         </div>
