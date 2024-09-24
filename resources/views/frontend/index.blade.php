@@ -395,6 +395,7 @@
                             <h4 class="mb-3">Home Delivery</h4>
                             <p class="mb-4">Home delivery delivers fast and safe food to customers at home.</p>
                             {{-- <a href=" " class="btn btn-primary px-4 py-2 rounded-pill">Read More</a> --}}
+
                         </div>
                     </div>
                 </div>
