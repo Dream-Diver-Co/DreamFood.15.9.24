@@ -175,7 +175,6 @@
         </form>
     </div>
 
-
     <!-- Stripe Payment Integration -->
     <script src="https://js.stripe.com/v3/"></script>
     <script>
